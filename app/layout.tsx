@@ -3,6 +3,9 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Footer from "../components/Footer";
 import Sidebar from "../components/Sidebar";
+import "@fortawesome/fontawesome-svg-core/styles.css";
+import { config } from "@fortawesome/fontawesome-svg-core";
+config.autoAddCss = false;
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -28,9 +31,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <Sidebar />
-        {children}
-        <Footer />
+        <div className="h-screen flex flex-row justify-start">
+          <Sidebar />
+          <div className="w-full">
+          {children}
+          <Footer />
+          </div>
+        </div>
+        
       </body>
     </html>
   );
