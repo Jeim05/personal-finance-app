@@ -1,5 +1,28 @@
 
-export const ITEMS_MENU=[
-    {href:'/', key:'home', label:'Dashboard', icon:['fas','fa-chart-line']},
-    {href:'/', key:'transactions', label:'Transacciones', icon:['fas','fa-chart-line']},
+export const sidebarLinks=[
+    {
+        icon: '',
+        route: '/',
+        label: 'Dashboard'
+    },
+    {
+        icon: '',
+        route: '/transacciones',
+        label: 'Transacciones'
+    },
+    {
+        icon: '',
+        route: '/presupuesto',
+        label: 'Presupuesto'
+    },
+    {
+        icon: '',
+        route: '/ahorro',
+        label: 'Ahorro'
+    },
+    {
+        icon: '',
+        route: '/deuda',
+        label: 'Deudas'
+    },
 ]

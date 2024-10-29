@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import Footer from "../components/Footer";
-import Sidebar from "../components/Sidebar";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 config.autoAddCss = false;
@@ -31,14 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <div className="h-screen flex flex-row justify-start">
-          <Sidebar />
-          <div className="w-full">
-          {children}
-          <Footer />
-          </div>
-        </div>
-        
+        {children}
       </body>
     </html>
   );
