@@ -1,8 +1,8 @@
 
 export const sidebarLinks=[
     {
-        icon: '',
-        route: '/',
+        icon: '/images/icons-sidebar/chart-simple-solid.svg',
+        route: '',
         label: 'Dashboard'
     },
     {
@@ -24,5 +24,10 @@ export const sidebarLinks=[
         icon: '',
         route: '/deuda',
         label: 'Deudas'
+    },
+    {
+        icon: '',
+        route: '/reportes',
+        label: 'Reportes'
     },
 ]
