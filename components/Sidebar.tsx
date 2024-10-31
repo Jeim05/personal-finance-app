@@ -15,7 +15,7 @@ const Sidebar = () => {
                 {sidebarLinks.map((item) => {
                     return (
                         <Link key={item.label} href={item.route} className='text-black flex gap-2 items-center'>
-                            <Image src={item.icon} width={20} height={20} alt='icon' className='text-red-800'/>
+                            <Image src={item.icon} width={20} height={20} alt='icon' className='text-red-800' />
                             {item.label}</Link>
                     )
                 })}
