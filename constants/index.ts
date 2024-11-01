@@ -2,7 +2,7 @@
 export const sidebarLinks=[
     {
         icon: '/images/icons-sidebar/chart-simple-solid.svg',
-        route: '',
+        route: '/',
         label: 'Dashboard'
     },
     {

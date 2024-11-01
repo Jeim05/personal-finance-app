@@ -1,3 +1,4 @@
+'use client'
 import { sidebarLinks } from '@/constants'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -14,10 +15,13 @@ const Sidebar = () => {
                     </h1>
                 </Link>
                 {sidebarLinks.map((item) => {
+                    const isActive = pathname == item.route || pathname.startsWith(`${item.route}/`);
+
                     return (
-                        <Link key={item.label} href={item.route} className='text-black flex gap-2 items-center'>
+                        <Link key={item.label} href={item.route} className={`text-black flex gap-2 items-center ${isActive ? 'bg-[#0179FE]' : ''}`}>
                             <Image src={item.icon} width={20} height={20} alt='icon' className='text-red-800' />
-                            {item.label}</Link>
+                            {item.label}
+                        </Link>
                     )
                 })}
             </nav>
