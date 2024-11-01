@@ -6,27 +6,27 @@ export const sidebarLinks=[
         label: 'Dashboard'
     },
     {
-        icon: '',
+        icon: '/images/icons-sidebar/money-bill-transfer-solid.svg',
         route: '/transacciones',
         label: 'Transacciones'
     },
     {
-        icon: '',
+        icon: '/images/icons-sidebar/receipt-solid.svg',
         route: '/presupuesto',
         label: 'Presupuesto'
     },
     {
-        icon: '',
+        icon: '/images/icons-sidebar/piggy-bank-solid.svg',
         route: '/ahorro',
         label: 'Ahorro'
     },
     {
-        icon: '',
+        icon: '/images/icons-sidebar/file-invoice-dollar-solid.svg',
         route: '/deuda',
         label: 'Deudas'
     },
     {
-        icon: '',
+        icon: '/images/icons-sidebar/file-export-solid.svg',
         route: '/reportes',
         label: 'Reportes'
     },
