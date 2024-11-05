@@ -9,12 +9,9 @@ const Sidebar = () => {
     return (
         <section className='sidebar'>
             <nav className='flex flex-col gap-4 '>
-                <Link href="/" className='mb-12 cursor-pointer items-center gap-2'>
+                <Link href="/" className='mb-10 text-center cursor-pointer items-center gap-2'>
                     <h1 className='sidebar-logo bg-gradient-to-r from-indigo-500 to-blue-600 bg-clip-text text-transparent font-bold text-2xl'>
-                        FinApp
-                    </h1>
-                    <h1 className='sidebar-logo bg-gradient-to-r from-indigo-500 to-blue-600 bg-clip-text text-transparent font-bold text-2xl'>
-                        FApp
+                        FiApp
                     </h1>
                 </Link>
                 {sidebarLinks.map((item) => {
