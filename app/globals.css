@@ -46,11 +46,11 @@ body {
 }
 
 .sidebar-link {
-  @apply flex gap-3 py-1 md:p-3 2xl:p-4 rounded-lg;
+  @apply flex items-center justify-start gap-3 py-1 w-full md:p-3 2xl:p-4 rounded-lg transition-all duration-300;
 }
 
 .sidebar-label {
-  @apply text-base font-semibold transition-opacity duration-300 ;
+  @apply text-base font-semibold transition-opacity duration-300;
 }
 
 .toggle-button{
