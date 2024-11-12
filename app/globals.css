@@ -46,7 +46,7 @@ body {
 }
 
 .sidebar-link {
-  @apply flex gap-3 py-1 md:p-3 2xl:p-4 rounded-lg justify-center xl:justify-start;
+  @apply flex gap-3 py-1 md:p-3 2xl:p-4 rounded-lg;
 }
 
 .sidebar-label {
@@ -54,7 +54,7 @@ body {
 }
 
 .toggle-button{
-  @apply cursor-pointer text-center text-black p-2 rounded-full bg-white shadow-lg border border-gray-200 hover:bg-gray-200 transition-transform duration-300;
+  @apply cursor-pointer text-center text-black py-1 px-1.5 rounded-full bg-gradient-to-r from-indigo-500 to-blue-600 shadow-lg border border-gray-200 absolute top-1 -right-7 hover:bg-gray-200 transition-transform duration-300;
 }
 
 
