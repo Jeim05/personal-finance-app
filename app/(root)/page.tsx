@@ -4,7 +4,7 @@ const Home = () => {
   return (
     <section className='home'>
         <div className='home-content'>
-            <header className=''>
+            <header className='home-header'>
                 Welcome
             </header>
         </div>
