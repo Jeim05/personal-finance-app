@@ -43,7 +43,7 @@ const Sidebar = () => {
                                 </Link>
                             )
                         })}
-                        
+
                         <button onClick={toggleSidebar} className="toggle-button">
                             {isExpanded ? (
                                 <Image src="/images/icons-sidebar/chevron-left-solid.svg" width={10} height={10} alt='close' className='invert ' />
