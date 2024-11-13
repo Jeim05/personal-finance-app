@@ -8,4 +8,5 @@ Web application for managing personal expenses, where you can implement your mon
 - Tailwind CSS
 
 ### Characteristics
+- Responsive desing
 
