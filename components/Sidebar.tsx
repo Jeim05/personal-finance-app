@@ -21,7 +21,8 @@ const Sidebar = () => {
             <span className={`line transition-transform ${isExpanded ? '-rotate-45 -translate-y-1.5' : ''}`}></span>
         </button>
 
-            <section className={`sidebar ${isExpanded ? 'max-w-72' : 'w-20'}`}>
+            <section className={`sidebar ${
+                    isExpanded ? 'translate-x-0 lg:max-w-72' : '-translate-x-full w-0 lg:w-20'} `}>
                 <nav className='flex flex-col gap-4 relative w-full'>
                     <Link href="/" className='mb-10 text-center cursor-pointer items-center gap-2'>
                         <h1 className={`sidebar-logo  ${!isExpanded && 'hidden'}`}>
@@ -54,6 +55,13 @@ const Sidebar = () => {
                     </div>
                 </nav>
             </section>
+
+            {isExpanded && (
+                <div 
+                    onClick={toggleSidebar} 
+                    className="fixed inset-0 bg-black bg-opacity-50 z-30 lg:hidden"
+                ></div>
+            )}
         </>
     )
 }

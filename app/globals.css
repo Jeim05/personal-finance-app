@@ -38,7 +38,8 @@ body {
 
 /* SIDEBAR */
 .sidebar {
-  @apply sticky left-0 top-0 flex h-screen flex-col justify-between border-r border-gray-200 bg-white pt-8 px-4 max-md:hidden transition-all duration-300;
+  @apply fixed left-0 top-0 h-screen border-r border-gray-200 bg-white pt-8 px-4 
+  transition-transform duration-300 z-40 lg:sticky lg:translate-x-0  sm:flex sm:flex-col sm:justify-between ;
 }
 
 .sidebar-logo {
