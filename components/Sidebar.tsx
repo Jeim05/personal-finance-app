@@ -15,14 +15,13 @@ const Sidebar = () => {
 
     return (
         <>
-        <button onClick={toggleSidebar} className='hamburguer'>
-            <span className={`line transition-transform ${isExpanded ? 'rotate-45 translate-y-1.5' : ''}`}></span>
-            <span className={`line transition-opacity ${isExpanded ? 'opacity-0' : ''}`}></span>
-            <span className={`line transition-transform ${isExpanded ? '-rotate-45 -translate-y-1.5' : ''}`}></span>
-        </button>
+            <button onClick={toggleSidebar} className='hamburguer'>
+                <span className={`line transition-transform ${isExpanded ? 'rotate-45 translate-y-1.5' : ''}`}></span>
+                <span className={`line transition-opacity ${isExpanded ? 'opacity-0' : ''}`}></span>
+                <span className={`line transition-transform ${isExpanded ? '-rotate-45 -translate-y-1.5' : ''}`}></span>
+            </button>
 
-            <section className={`sidebar ${
-                    isExpanded ? 'translate-x-0 lg:max-w-72' : '-translate-x-full w-0 lg:w-20'} `}>
+            <section className={`sidebar ${isExpanded ? 'translate-x-0 max-w-64 md:max-w-72' : '-translate-x-full w-0 md:w-20'} `}>
                 <nav className='flex flex-col gap-4 relative w-full'>
                     <Link href="/" className='mb-10 text-center cursor-pointer items-center gap-2'>
                         <h1 className={`sidebar-logo  ${!isExpanded && 'hidden'}`}>
@@ -44,6 +43,7 @@ const Sidebar = () => {
                                 </Link>
                             )
                         })}
+                        
                         <button onClick={toggleSidebar} className="toggle-button">
                             {isExpanded ? (
                                 <Image src="/images/icons-sidebar/chevron-left-solid.svg" width={10} height={10} alt='close' className='invert ' />
@@ -57,9 +57,9 @@ const Sidebar = () => {
             </section>
 
             {isExpanded && (
-                <div 
-                    onClick={toggleSidebar} 
-                    className="fixed inset-0 bg-black bg-opacity-50 z-30 lg:hidden"
+                <div
+                    onClick={toggleSidebar}
+                    className="fixed inset-0 bg-black bg-opacity-50 z-30 md:hidden"
                 ></div>
             )}
         </>

@@ -26,20 +26,10 @@ body {
   }
 }
 
-/* HOME PAGE */
-
-.home {
-  @apply flex w-full flex-row max-xl:max-h-screen max-xl:overflow-y-scroll;
-}
-
-.home-content {
-  @apply flex w-full flex-1 flex-col gap-8 px-5 sm:px-8 py-7 lg:py-8 xl:max-h-screen xl:overflow-y-scroll;
-}
-
 /* SIDEBAR */
 .sidebar {
   @apply fixed left-0 top-0 h-screen border-r border-gray-200 bg-white pt-8 px-4 
-  transition-transform duration-300 z-40 lg:sticky lg:translate-x-0  sm:flex sm:flex-col sm:justify-between ;
+  transition-transform duration-300 z-40 md:sticky md:translate-x-0 md:flex md:flex-col md:justify-between ;
 }
 
 .sidebar-logo {
@@ -47,7 +37,7 @@ body {
 }
 
 .sidebar-link {
-  @apply flex items-center justify-start gap-3 py-1 w-full md:p-3 2xl:p-4 rounded-lg transition-all duration-300;
+  @apply flex items-center justify-start gap-3 py-2 px-2 w-full rounded-lg transition-all duration-300 md:p-3 2xl:p-4 ;
 }
 
 .sidebar-label {
@@ -56,15 +46,25 @@ body {
 
 .toggle-button {
   @apply cursor-pointer text-center text-black py-1 px-1.5 rounded-full bg-gradient-to-r from-indigo-500 to-blue-600 
-  shadow-lg border border-gray-200 absolute top-1 -right-7 max-md:hidden hover:bg-gray-200 transition-transform duration-300;
+  shadow-lg border border-gray-200 absolute top-1 -right-7 hover:bg-gray-200 transition-transform duration-300 max-md:hidden;
 }
 
 .hamburguer{
  @apply fixed top-4 left-4 z-50 flex flex-col justify-center items-center space-y-1 w-8 h-8 rounded-lg 
- bg-white shadow-lg lg:hidden
+ bg-white shadow-lg md:hidden
 }
 
 .hamburguer .line{
   @apply block h-0.5 w-6 bg-black duration-300;
+}
+
+/* HOME PAGE */
+
+.home {
+  @apply flex w-full flex-row max-xl:max-h-screen max-xl:overflow-y-scroll;
+}
+
+.home-content {
+  @apply flex w-full flex-1 flex-col gap-8 px-5 sm:px-8 py-7 lg:py-8 xl:max-h-screen xl:overflow-y-scroll;
 }
 
