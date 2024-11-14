@@ -27,7 +27,7 @@ const meses = [
   },
 ]
 
-const DoughnutChart = ({accounts}:DoughnutChartProps) => {
+const DoughnutChart = (/*{accounts}:DoughnutChartProps*/) => {
   const labels = meses.map(mes => mes.nombre);
   const values = meses.map(mes => mes.valor);
    
