@@ -1,3 +1,4 @@
+import DoughnutChart from '@/components/ui/doughnutChart'
 import React from 'react'
 
 const Home = () => {
@@ -5,7 +6,7 @@ const Home = () => {
     <section className='home'>
         <div className='home-content'>
             <header className='home-header'>
-                Welcome
+                <DoughnutChart />
             </header>
         </div>
     </section>
