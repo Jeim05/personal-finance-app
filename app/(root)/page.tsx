@@ -6,7 +6,7 @@ const Home = () => {
     <section className='home'>
         <div className='home-content'>
             <header className='home-header'>
-                <DoughnutChart />
+                
             </header>
         </div>
     </section>
