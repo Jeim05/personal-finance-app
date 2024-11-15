@@ -1,4 +1,5 @@
 import MainCards from '@/components/dashboard/mainCards'
+import { Header } from '@/components/Header'
 import DoughnutChart from '@/components/ui/doughnutChart'
 import React from 'react'
 
