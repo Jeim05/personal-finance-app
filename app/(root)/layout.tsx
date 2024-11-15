@@ -8,8 +8,14 @@ export default function RootLayout({
 }>) {
   return (
     <main className="flex h-screen w-full ">
+      <div>
         <Sidebar />
+      </div>
+      <div className="w-full">
+        <Header />
         {children}
+      </div>
+
     </main>
   );
 }
