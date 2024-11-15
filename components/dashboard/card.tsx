@@ -1,7 +1,9 @@
 import React from 'react'
 
-export default function Card() {
+export default function Card({style}:) {
   return (
-    <div className=''>cards</div>
+    <div className=''>
+
+    </div>
   )
 }

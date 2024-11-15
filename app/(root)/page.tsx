@@ -1,3 +1,4 @@
+import MainCards from '@/components/dashboard/mainCards'
 import DoughnutChart from '@/components/ui/doughnutChart'
 import React from 'react'
 
@@ -5,9 +6,7 @@ const Home = () => {
   return (
     <section className='home'>
         <div className='home-content'>
-            <header className='home-header'>
-                
-            </header>
+            <MainCards />
         </div>
     </section>
   )
