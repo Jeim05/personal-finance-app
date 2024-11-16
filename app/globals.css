@@ -32,7 +32,7 @@ body {
 
 /* SIDEBAR */
 .sidebar {
-  @apply fixed left-0 top-0 h-screen border-r border-gray-200 bg-white pt-8 px-4 
+  @apply fixed left-0 top-0 h-screen border-r border-gray-200 dark:border-zinc-700 pt-8 px-4 bg-white dark:bg-zinc-800 
   transition-transform duration-300 z-40 md:sticky md:translate-x-0 md:flex md:flex-col md:justify-between ;
 }
 

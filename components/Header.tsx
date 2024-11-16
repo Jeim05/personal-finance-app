@@ -6,11 +6,11 @@ import { DarkModeSwitcher } from './ui/DarkModeSwitcher'
 
 export const Header = () => {
     return (
-        <div className='shadow-md h-16 px-10 py-2'>
+        <div className='shadow-md h-16 px-10 py-2 dark:bg-zinc-800'>
             <div className='flex flex-row-reverse items-center content-center h-full my-auto gap-4 px-4'>
                 <div className='flex gap-2 items-center'>
                     <div>
-                        <p className='font-semibold'>Mi perfil</p>
+                        <p className='font-semibold dark:text-white'>Mi perfil</p>
                     </div>
                     <div className='rounded-full '>
                         <Image src="/images/icons-sidebar/perfil.png" width={25} height={25} alt='' />

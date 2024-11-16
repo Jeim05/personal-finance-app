@@ -35,7 +35,7 @@ const Sidebar = () => {
                             return (
                                 <Link key={item.label} href={item.route} className={`sidebar-link ${isActive ? 'bg-gradient-to-r from-indigo-500 to-blue-500 text-white' : ''}`}>
                                     <div className='relative size-6'>
-                                        <Image src={item.icon} fill alt={item.label} className={`brightness-50 ${isActive ? 'brightness-200 invert' : ''}`} />
+                                        <Image src={item.icon} fill alt={item.label} className={`brightness-50 dark:invert ${isActive ? 'brightness-200 invert' : ''}`} />
                                     </div>
                                     <p className={`sidebar-label ${!isExpanded && 'hidden'}`}>
                                         {item.label}
