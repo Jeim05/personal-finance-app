@@ -10,11 +10,11 @@ const Home = () => {
           <MainCards />
         </div>
         <div className='grid grid-cols-3 gap-2'>
-          <div className='col-span-2'>
-            <DoughnutChart />
+          <div className='col-span-2 px-4'>
+
           </div>
           <div>
-            <TableCategories />
+            <DoughnutChart />
           </div>
         </div>
 
