@@ -5,5 +5,6 @@ export interface CardProps {
     amount: number;
     icon: IconDefinition;
     icon_variant?: string;
-    variant?: string;
+    arrow: IconDefinition;
+    arrow_variant?: string;
 }
