@@ -9,12 +9,15 @@ const Home = () => {
         <div className='home-header'>
           <MainCards />
         </div>
-        <div className='grid grid-cols-3 gap-2'>
-          <div className='col-span-2 px-4'>
+        <div className='grid grid-cols-3 gap-4'>
+          <div className='col-span-2 bg-gray-300 px-4'>
 
           </div>
           <div>
-            <DoughnutChart />
+            <h3 className='font-bold py-4 text-xl'>Monto gastado por Categoría</h3>
+            <div className='mx-auto'>
+              <DoughnutChart />
+            </div>
           </div>
         </div>
 

@@ -8,12 +8,14 @@ export default function RootLayout({
 }>) {
   return (
     <main className="flex h-screen w-full ">
-      <div>
+      <aside>
         <Sidebar />
-      </div>
+      </aside>
       <div className="w-full">
         <Header />
-        {children}
+        <div className="bg-zinc-100">
+          {children}
+        </div>
       </div>
 
     </main>

@@ -25,6 +25,10 @@ const categorias = [
     'nombre': 'Otros',
     'valor': 25000
   },
+  {
+    'nombre': 'Ahorro',
+    'valor': 5000
+  },
 ]
 
 const DoughnutChart = (/*{accounts}:DoughnutChartProps*/) => {
@@ -41,7 +45,8 @@ const DoughnutChart = (/*{accounts}:DoughnutChartProps*/) => {
         'rgb(54, 162, 235)',
         'rgb(255, 205, 86)',
         'rgb(25, 20, 120)',
-        'rgb(55, 162, 201)'
+        'rgb(55, 162, 201)',
+        'rgb(255, 205, 86)',
       ],
       hoverOffset: 4,
     }]
