@@ -11,11 +11,9 @@ export default function RootLayout({
       <aside>
         <Sidebar />
       </aside>
-      <div className="w-full">
+      <div className="w-full bg-zinc-100 dark:bg-zinc-800">
         <Header />
-        <div className="bg-zinc-100">
-          {children}
-        </div>
+        {children}
       </div>
 
     </main>
