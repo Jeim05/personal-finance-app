@@ -5,12 +5,13 @@ import { Doughnut } from "react-chartjs-2";
 ChartJS.register(ArcElement, Tooltip, Legend, plugins);
 
 const categorias = [
-  { 'nombre': 'Disfrutar', 'valor': 20000 },
-  { 'nombre': 'Alimentación', 'valor': 35000 },
-  { 'nombre': 'Mascotas', 'valor': 45000 },
-  { 'nombre': 'Suscripciones', 'valor': 15000 },
-  { 'nombre': 'Otros', 'valor': 25000 },
-  { 'nombre': 'Ahorro', 'valor': 5000 },
+  { 'nombre': 'Disfrutar', 'valor': 20 },
+  { 'nombre': 'Alimentación', 'valor': 35 },
+  { 'nombre': 'Mascotas', 'valor': 45 },
+  { 'nombre': 'Suscripciones', 'valor': 15 },
+  { 'nombre': 'Otros', 'valor': 25 },
+  { 'nombre': 'Ahorro', 'valor': 50},
+  { 'nombre': 'Deuda', 'valor': 10},
 ]
 
 const DoughnutChart = (/*{accounts}:DoughnutChartProps*/) => {
@@ -27,7 +28,8 @@ const DoughnutChart = (/*{accounts}:DoughnutChartProps*/) => {
         'rgb(255, 205, 86)',
         'rgb(25, 20, 120)',
         'rgb(55, 162, 201)',
-        'rgb(255, 205, 86)',
+        'rgb(99, 162, 145)',
+        'rgb(143, 20, 222)',
       ],
 
     }],
@@ -38,17 +40,21 @@ const DoughnutChart = (/*{accounts}:DoughnutChartProps*/) => {
     responsive: true,
     plugins: {
       legend: {
-        position: 'bottom',
+        position: 'right',
+        labels: {
+          usePointStyle: true,
+          pointStyle: "circle",
+          font: {
+            size: 10
+          }
+        }
       },
-      title: {
-        display: true,
-        text: 'Gastos por categoría'
-      }
-    }
+    },
+    maintainAspectRatio: false,
   };
 
   return (
-    <div className="bg-white py-4 rounded-md basis-1/2">
+    <div>
       <Doughnut data={data} options={options} />
     </div>
   )
