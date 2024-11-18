@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function Card({ title, amount, icon, icon_variant, arrow, arrow_variant }: CardProps) {
   return (
-    <div className={`bg-white shadow-md flex flex-col px-5 py-4 rounded-sm w-full h-36 gap-2`}>
+    <div className={`card`}>
       <div className={`text-2xl py-2 w-12 h-12 text-center shadow-md border border-zinc-200 rounded-full ${icon_variant}`}>
         <FontAwesomeIcon icon={icon} />
       </div>
@@ -15,7 +15,7 @@ export default function Card({ title, amount, icon, icon_variant, arrow, arrow_v
         </div>
         <div className={`flex items-end ${arrow_variant}`}>
           <span>5%</span>
-          <span><FontAwesomeIcon icon={faArrowUp}/></span>
+          <span><FontAwesomeIcon icon={arrow}/></span>
           
         </div>
       </div>
