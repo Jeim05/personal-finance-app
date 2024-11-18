@@ -1,5 +1,5 @@
 "use client"
-import { Chart as ChartJS, ArcElement, Tooltip, Legend, plugins } from "chart.js";
+import { Chart as ChartJS, ArcElement, Tooltip, Legend, plugins, ChartOptions } from "chart.js";
 import { Doughnut } from "react-chartjs-2";
 
 ChartJS.register(ArcElement, Tooltip, Legend, plugins);
@@ -36,7 +36,7 @@ const DoughnutChart = (/*{accounts}:DoughnutChartProps*/) => {
     labels: labels,
   };
 
-  const options = {
+  const options: ChartOptions<"doughnut"> = {
     responsive: true,
     plugins: {
       legend: {
