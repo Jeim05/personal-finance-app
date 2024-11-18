@@ -48,12 +48,11 @@ const DoughnutChart = (/*{accounts}:DoughnutChartProps*/) => {
         'rgb(55, 162, 201)',
         'rgb(255, 205, 86)',
       ],
-      hoverOffset: 4,
-    }]
+    }],
   };
 
   return (
-    <div>
+    <div className="bg-white py-4 px-1 rounded-md">
       <Doughnut data={data} />
     </div>
   )

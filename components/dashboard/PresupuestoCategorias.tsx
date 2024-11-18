@@ -4,7 +4,7 @@ import DoughnutChart from '../ui/doughnutChart'
 
 export const PresupuestoCategorias = () => {
     return (
-        <div className='flex flex-row gap-2 justify-center'>
+        <div className='flex flex-row gap-2 justify-between'>
             <CardPresupuesto />
             <DoughnutChart />
         </div>
