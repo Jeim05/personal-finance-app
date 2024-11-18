@@ -1,7 +1,5 @@
 import MainCards from '@/components/dashboard/mainCards'
-import TableCategories from '@/components/dashboard/TableCategories'
-import { BarCategoriesChart } from '@/components/ui/BarCategoriesChart'
-import DoughnutChart from '@/components/ui/doughnutChart'
+import { PresupuestoCategorias } from '@/components/dashboard/PresupuestoCategorias'
 
 const Home = () => {
   return (
@@ -11,7 +9,7 @@ const Home = () => {
           <MainCards />
         </div>
         <div className='home-content-left'>
-          
+          <PresupuestoCategorias />
         </div>
       </div>
     </section>

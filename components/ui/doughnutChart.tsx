@@ -53,7 +53,9 @@ const DoughnutChart = (/*{accounts}:DoughnutChartProps*/) => {
   };
 
   return (
-    <Doughnut data={data} />
+    <div>
+      <Doughnut data={data} />
+    </div>
   )
 }
 
