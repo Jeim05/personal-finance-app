@@ -75,7 +75,28 @@ body {
   @apply flex flex-col justify-between gap-8;
 }
 
+.subtitulos {
+  @apply font-semibold text-gray-400 text-sm;
+}
+
 .card{
   @apply bg-white shadow-md flex flex-col px-5 py-4 rounded-lg w-full h-36 gap-2;
 }
+
+.card-icon{
+  @apply text-2xl py-2 w-12 h-12 text-center shadow-md border border-zinc-200 rounded-full;
+}
+
+.card-body{
+  @apply flex flex-row;
+}
+
+.card-amount{
+  @apply font-bold text-2xl;
+}
+
+.cards-wrapper{
+  @apply container flex flex-col lg:flex-row gap-3 justify-between;
+}
+
 

@@ -3,11 +3,11 @@ import React from 'react'
 export const CardPresupuesto = () => {
     return (
         <div className='bg-white py-4 px-4 rounded-md basis-1/2'>
-            <h3 className='font-semibold text-gray-400 text-sm'>
+            <h3 className='subtitulos'>
                 Presupuesto mensual
             </h3>
             <div className='bg-zinc-100 rounded-md px-3 pt-4 my-2'>
-                <p className='py-1 font-semibold text-2xl'>₡ 260000</p>
+                <p className='card-amount py-1'>₡ 260000</p>
                 <hr />
                 <div className='py-1 mt-2'>
                     <p className='text-gray-600 text-sm font-mono'>Monto disponible</p>

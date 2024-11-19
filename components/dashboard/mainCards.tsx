@@ -4,7 +4,7 @@ import { faHandHoldingDollar, faMoneyBillTransfer, faArrowUp, faArrowDown} from 
 
 export default function MainCards() {
   return (
-    <div className="container flex flex-col lg:flex-row gap-3 justify-between">
+    <div className="cards-wrapper">
       <Card
         title="Ingreso mensual"
         amount={500000.0}
