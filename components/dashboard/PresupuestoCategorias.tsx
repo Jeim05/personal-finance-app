@@ -4,9 +4,9 @@ import DoughnutChart from '../ui/doughnutChart'
 
 export const PresupuestoCategorias = () => {
     return (
-        <div className='flex flex-col lg:flex-row gap-3 justify-between'>
+        <div className='budget-doughnut-wrapper'>
             <CardPresupuesto />
-            <div className='bg-white py-3 px-4 rounded-md basis-1/2'>
+            <div className='doughnut-box'>
                 <div>
                     <h3 className='subtitulo'>Categorías</h3>
                 </div>

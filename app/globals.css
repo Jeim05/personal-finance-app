@@ -99,4 +99,12 @@ body {
   @apply container flex flex-col lg:flex-row gap-3 justify-between;
 }
 
+.budget-doughnut-wrapper{
+  @apply flex flex-col lg:flex-row gap-3 justify-between;
+}
+
+.doughnut-box{
+  @apply bg-white py-3 px-4 rounded-md basis-1/2;
+}
+
 
