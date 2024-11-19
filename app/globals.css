@@ -107,4 +107,12 @@ body {
   @apply bg-white py-3 px-4 rounded-md basis-1/2;
 }
 
+.budged-card {
+  @apply bg-white py-4 px-4 rounded-md basis-1/2;
+}
+
+.budget-amounts-box{
+  @apply bg-zinc-100 rounded-md px-3 pt-4 my-2;
+}
+
 
