@@ -1,11 +1,10 @@
 import React from 'react'
+import { Subtitles } from './Subtitles'
 
 export const CardPresupuesto = () => {
     return (
         <div className='budged-card'>
-            <h3 className='subtitulos'>
-                Presupuesto mensual
-            </h3>
+            <Subtitles text='Presupuesto mensual' />
             <div className='budget-amounts-box'>
                 <p className='card-amount py-1'>₡ 260000</p>
                 <hr />

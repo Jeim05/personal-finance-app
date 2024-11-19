@@ -8,3 +8,7 @@ export interface CardProps {
     arrow: IconDefinition;
     arrow_variant?: string;
 }
+
+export interface SubtitlesProps {
+    text: string;
+}

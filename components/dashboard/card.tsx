@@ -1,5 +1,6 @@
 import { CardProps } from '@/types'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { Subtitles } from './Subtitles'
 
 export default function Card({ title, amount, icon, icon_variant, arrow, arrow_variant }: CardProps) {
   return (
@@ -10,7 +11,7 @@ export default function Card({ title, amount, icon, icon_variant, arrow, arrow_v
       <div className='card-body '>
         <div className='flex-1 flex flex-col'>
           <p className='card-amount py-0.5'>₡{amount}</p>
-          <h3 className='subtitulos'>{title}</h3>
+          <Subtitles text={title} />
         </div>
         <div className={`flex items-end ${arrow_variant}`}>
           <span>5%</span>
