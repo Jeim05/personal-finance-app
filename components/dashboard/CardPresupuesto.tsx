@@ -6,8 +6,13 @@ export const CardPresupuesto = () => {
             <h3 className='font-semibold text-gray-400 text-sm'>
                 Presupuesto mensual
             </h3>
-            <div>
-                <p className='py-1 font-bold'>260000</p>
+            <div className='bg-zinc-100 rounded-md px-3 pt-4 my-2'>
+                <p className='py-1 font-semibold text-2xl'>₡ 260000</p>
+                <hr />
+                <div className='py-1 mt-2'>
+                    <p className='text-gray-600 text-sm font-mono'>Monto disponible</p>
+                    <p className='text-gray-700 font-mono'>₡60000</p>
+                </div>
             </div>
         </div>
     )
