@@ -7,6 +7,7 @@ const Home = () => {
       <div className='home-content'>
         <div className='home-content-right'>
           <MainCards />
+          
         </div>
         <div className='home-content-left'>
           <PresupuestoCategorias />

@@ -30,6 +30,14 @@ body {
  @apply bg-clip-text bg-gradient-to-r from-indigo-500 to-blue-600  text-transparent;
 }
 
+.subtitulos {
+  @apply font-semibold text-gray-400 text-sm;
+}
+
+.bg-cards{
+  @apply bg-white rounded-md dark:bg-zinc-800;
+}
+
 /* SIDEBAR */
 .sidebar {
   @apply fixed left-0 top-0 h-screen border-r border-gray-200 dark:border-zinc-700 pt-8 px-4 bg-white dark:bg-zinc-800 
@@ -75,12 +83,8 @@ body {
   @apply flex flex-col justify-between gap-8;
 }
 
-.subtitulos {
-  @apply font-semibold text-gray-400 text-sm;
-}
-
 .card{
-  @apply bg-white shadow-md flex flex-col px-5 py-4 rounded-lg w-full h-36 gap-2;
+  @apply bg-cards shadow-md flex flex-col px-5 py-4 w-full h-36 gap-2;
 }
 
 .card-icon{
@@ -104,15 +108,17 @@ body {
 }
 
 .doughnut-box{
-  @apply bg-white py-3 px-4 rounded-md basis-1/2;
+  @apply bg-cards py-3 px-4 basis-1/2;
 }
 
 .budged-card {
-  @apply bg-white py-4 px-4 rounded-md basis-1/2;
+  @apply bg-cards py-4 px-4 basis-1/2;
 }
 
 .budget-amounts-box{
   @apply bg-zinc-100 rounded-md px-3 pt-4 my-2;
 }
+
+
 
 
