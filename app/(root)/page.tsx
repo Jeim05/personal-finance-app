@@ -1,5 +1,6 @@
 import MainCards from '@/components/dashboard/mainCards'
 import { PresupuestoCategorias } from '@/components/dashboard/PresupuestoCategorias'
+import { Tables } from '@/components/dashboard/Tables'
 import { VerticalBarChart } from '@/components/ui/VerticalBarChart'
 
 const Home = () => {
