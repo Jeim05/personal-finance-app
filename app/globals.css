@@ -121,7 +121,7 @@ body {
 }
 
 .dashboard-tables{
-  @apply flex lg:flex-row py-4;
+  @apply flex lg:flex-row gap-3 py-4;
 }
 
 
