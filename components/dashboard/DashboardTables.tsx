@@ -2,9 +2,9 @@ import React from 'react'
 import { CategoriesTable } from './CategoriesTable'
 import { BudgedTable } from './BudgedTable'
 
-export const Tables = () => {
+export const DashboardTables = () => {
   return (
-    <div className='grid grid-cols-1 lg:grid-cols-2'>
+    <div className='dashboard-tables'>
         <BudgedTable />
         <CategoriesTable />
     </div>

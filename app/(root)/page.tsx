@@ -1,6 +1,6 @@
 import MainCards from '@/components/dashboard/mainCards'
 import { PresupuestoCategorias } from '@/components/dashboard/PresupuestoCategorias'
-import { Tables } from '@/components/dashboard/Tables'
+import { DashboardTables } from '@/components/dashboard/DashboardTables'
 import { VerticalBarChart } from '@/components/ui/VerticalBarChart'
 
 const Home = () => {
@@ -13,6 +13,7 @@ const Home = () => {
         </div>
         <div className='home-content-left'>
           <PresupuestoCategorias />
+          <DashboardTables />
         </div>
       </div>
     </section>
