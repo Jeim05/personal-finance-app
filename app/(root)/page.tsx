@@ -10,10 +10,10 @@ const Home = () => {
         <div className='home-content-right'>
           <MainCards />
           <VerticalBarChart />
+          <DashboardTables />
         </div>
         <div className='home-content-left'>
           <PresupuestoCategorias />
-          <DashboardTables />
         </div>
       </div>
     </section>

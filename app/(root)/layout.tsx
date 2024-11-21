@@ -7,7 +7,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <main className="flex h-screen w-full ">
+    <main className="flex w-full ">
       <aside>
         <Sidebar />
       </aside>

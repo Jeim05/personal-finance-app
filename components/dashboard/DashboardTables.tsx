@@ -5,8 +5,8 @@ import { BudgedTable } from './BudgedTable'
 export const DashboardTables = () => {
   return (
     <div className='dashboard-tables'>
-        <BudgedTable />
         <CategoriesTable />
+        <BudgedTable />
     </div>
   )
 }
