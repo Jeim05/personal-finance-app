@@ -11,4 +11,5 @@ export interface CardProps {
 
 export interface SubtitlesProps {
     text: string;
+    variants?: string;
 }

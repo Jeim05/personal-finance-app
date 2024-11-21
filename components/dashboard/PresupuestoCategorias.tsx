@@ -9,7 +9,7 @@ export const PresupuestoCategorias = () => {
             <CardPresupuesto />
             <div className='doughnut-box'>
                 <div>
-                    <Subtitles text='Categorías' />
+                    <Subtitles text='Monto gastado por categoría' variants='py-2' />
                 </div>
                 <DoughnutChart />
             </div>
