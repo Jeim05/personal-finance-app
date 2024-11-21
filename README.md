@@ -10,4 +10,5 @@ The objective of this project is to provide a simple way to manage your personal
 - Chart js
 - Consuming API.
 - Responsive desing
+- Dark Mode
 
