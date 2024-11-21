@@ -32,16 +32,16 @@ body {
 }
 
 .subtitles {
-  @apply font-semibold text-gray-400 text-sm;
+  @apply font-semibold text-zinc-400 dark:text-white text-sm;
 }
 
 .bg-cards{
-  @apply bg-white rounded-md dark:bg-zinc-800;
+  @apply bg-white rounded-md dark:bg-zinc-700;
 }
 
 /* SIDEBAR */
 .sidebar {
-  @apply fixed left-0 top-0 h-screen border-r border-gray-200 dark:border-zinc-700 pt-8 px-4 bg-white dark:bg-zinc-800 
+  @apply fixed left-0 top-0 h-screen border-r border-gray-200 dark:border-zinc-700 pt-8 px-4 bg-white dark:bg-zinc-700 
   transition-transform duration-300 z-40 md:sticky md:translate-x-0 md:flex md:flex-col md:justify-between ;
 }
 
@@ -54,7 +54,7 @@ body {
 }
 
 .sidebar-label {
-  @apply text-base font-semibold transition-opacity duration-300;
+  @apply text-base font-semibold transition-opacity duration-300 dark:text-white;
 }
 
 .toggle-button {

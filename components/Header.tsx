@@ -6,7 +6,7 @@ import { DarkModeSwitcher } from './ui/DarkModeSwitcher'
 
 export const Header = () => {
     return (
-        <header className='shadow-sm h-16 px-10 py-2 bg-white dark:bg-zinc-800'>
+        <header className='shadow-sm h-16 px-10 py-2 bg-white dark:bg-zinc-700'>
             <div className='flex flex-row-reverse items-center content-center h-full my-auto gap-4 px-4'>
                 <div className='flex gap-2 items-center'>
                     <div>
