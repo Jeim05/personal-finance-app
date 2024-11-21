@@ -14,7 +14,7 @@ export default function MainCards() {
         arrow_variant="text-green-500"
       />
       <Card
-        title="Egreso Actual Mensual"
+        title="Egreso Mensual"
         icon={faMoneyBillTransfer}
         amount={60000}
         icon_variant="text-[#B25C60]"
