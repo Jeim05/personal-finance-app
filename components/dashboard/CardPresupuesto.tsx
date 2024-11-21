@@ -9,8 +9,8 @@ export const CardPresupuesto = () => {
                 <p className='card-amount py-2'>₡ 260000</p>
                 <hr className='h-px border-0 bg-indigo-600'/>
                 <div className='py-2 mt-2'>
-                    <p className='text-gray-600 text-xs font-mono'>Monto disponible para gastar</p>
-                    <p className='text-gray-700 font-mono'>₡ 60000</p>
+                    <p className='text-gray-600 text-sm py-0.5'>Monto disponible en el mes</p>
+                    <p className='text-gray-700 font-mono text-lg'>₡ 60000</p>
                 </div>
             </div>
         </div>
