@@ -4,7 +4,7 @@ import { Subtitles } from './Subtitles'
 export const CardPresupuesto = () => {
     return (
         <div className='budged-card'>
-            <Subtitles text='Presupuesto mensual' />
+            <Subtitles text='Presupuesto mensual' variants='py-2' />
             <div className='budget-amounts-box'>
                 <p className='card-amount py-2'>₡ 260000</p>
                 <hr />

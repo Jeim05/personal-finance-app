@@ -2,8 +2,8 @@ import React from 'react'
 
 export const CategoriesTable = () => {
   return (
-    <div className='bg-cards basis-1/2 py-4'>
-      <div className='px-4 relative overflow-x-auto'>
+    <div className='bg-cards basis-1/2'>
+      <div className='px-4 py-4 relative overflow-x-auto'>
         <table className='w-full text-sm text-left rtl:text-right text-zinc-500 dark:text-zinc-300'>
           <thead className='text-xs text-gray-700 uppercase bg-gray-50'>
             <tr>

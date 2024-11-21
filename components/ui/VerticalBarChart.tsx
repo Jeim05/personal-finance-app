@@ -36,13 +36,11 @@ export const VerticalBarChart = () => {
     };
 
     return (
-        <div className='py-4'>
-            <div className='bg-cards p-4'>
+            <div className='bg-cards mt-4 p-4'>
                 <Subtitles text='Ingresos y gastos de los últimos 6 meses' />
                 <div>
                     <Bar data={data} />
                 </div>
             </div>
-        </div>
     )
 }
