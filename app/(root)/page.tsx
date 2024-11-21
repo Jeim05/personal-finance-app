@@ -2,6 +2,7 @@ import MainCards from '@/components/dashboard/mainCards'
 import { PresupuestoCategorias } from '@/components/dashboard/PresupuestoCategorias'
 import { DashboardTables } from '@/components/dashboard/DashboardTables'
 import { VerticalBarChart } from '@/components/ui/VerticalBarChart'
+import { LineChartUtility } from '@/components/ui/LineChartUtility'
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
         </div>
         <div className='home-content-left'>
           <PresupuestoCategorias />
+          <LineChartUtility />
         </div>
       </div>
     </section>
