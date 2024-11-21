@@ -6,7 +6,7 @@ import { Chart as ChartJS, ArcElement, Tooltip, Legend, plugins, CategoryScale, 
 ChartJS.register(ArcElement, Tooltip, Legend, plugins, CategoryScale, LinearScale, BarElement);
 
 const datos = [
-    { 'mes': 'Enero', 'ingreso': 500000, 'egreso': 110000 },
+    { 'mes': 'Enero', 'ingreso': 1000000, 'egreso': 110000 },
     { 'mes': 'Febrero', 'ingreso': 500000, 'egreso': 325000 },
     { 'mes': 'Marzo', 'ingreso': 500000, 'egreso': 450000 },
     { 'mes': 'Abril', 'ingreso': 500000, 'egreso': 200000 },
