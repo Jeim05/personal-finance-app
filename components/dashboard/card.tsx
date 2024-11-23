@@ -8,7 +8,7 @@ export default function Card({ title, amount, icon, icon_variant, arrow, arrow_v
       <div className={`card-icon ${icon_variant}`}>
         <FontAwesomeIcon icon={icon} />
       </div>
-      <div className='card-body '>
+      <div className='card-body'>
         <div className='flex-1 flex flex-col'>
           <p className='card-amount py-0.5'>₡{amount}</p>
           <Subtitles text={title} />

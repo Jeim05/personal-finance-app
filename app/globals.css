@@ -89,7 +89,7 @@ body {
 }
 
 .card-icon{
-  @apply text-2xl py-2 w-12 h-12 text-center shadow-md border border-zinc-200 rounded-full;
+  @apply text-2xl py-2 w-12 h-12 text-center shadow-md border border-zinc-200 rounded-full dark:bg-white;
 }
 
 .card-body{
@@ -97,7 +97,7 @@ body {
 }
 
 .card-amount{
-  @apply font-bold text-2xl;
+  @apply font-bold text-2xl dark:text-white;
 }
 
 .cards-wrapper{
@@ -117,7 +117,7 @@ body {
 }
 
 .budget-amounts-box{
-  @apply bg-zinc-100 rounded-md px-3 py-4 my-2;
+  @apply bg-zinc-100 rounded-md px-3 py-4 my-2 dark:bg-zinc-800;
 }
 
 .dashboard-tables{
