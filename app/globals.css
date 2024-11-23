@@ -28,21 +28,21 @@ body {
 
 /* Universal */
 .text-gradient {
- @apply bg-clip-text bg-gradient-to-r from-indigo-500 to-blue-600  text-transparent;
+  @apply bg-clip-text bg-gradient-to-r from-indigo-500 to-blue-600  text-transparent;
 }
 
 .subtitles {
   @apply font-semibold text-zinc-400 dark:text-white text-sm;
 }
 
-.bg-cards{
+.bg-cards {
   @apply bg-white rounded-md dark:bg-zinc-700;
 }
 
 /* SIDEBAR */
 .sidebar {
   @apply fixed left-0 top-0 h-screen border-r border-gray-200 dark:border-zinc-700 pt-8 px-4 bg-white dark:bg-zinc-700 
-  transition-transform duration-300 z-40 md:sticky md:translate-x-0 md:flex md:flex-col md:justify-between ;
+  transition-transform duration-300 z-40 md:sticky md:translate-x-0 md:flex md:flex-col md:justify-between;
 }
 
 .sidebar-logo {
@@ -50,7 +50,7 @@ body {
 }
 
 .sidebar-link {
-  @apply flex items-center justify-start gap-3 py-2 px-2 w-full rounded-lg transition-all duration-300 md:p-3 2xl:p-4 ;
+  @apply flex items-center justify-start gap-3 py-2 px-2 w-full rounded-lg transition-all duration-300 md:p-3 2xl:p-4;
 }
 
 .sidebar-label {
@@ -62,12 +62,12 @@ body {
   shadow-lg border border-gray-200 absolute top-1 -right-7 hover:bg-gray-200 transition-transform duration-300 max-md:hidden;
 }
 
-.hamburguer{
- @apply fixed top-4 left-4 z-50 flex flex-col justify-center items-center space-y-1 w-8 h-8 rounded-lg 
- bg-white shadow-lg md:hidden
+.hamburguer {
+  @apply fixed top-4 left-4 z-50 flex flex-col justify-center items-center space-y-1 w-8 h-8 rounded-lg 
+ bg-white shadow-lg md:hidden;
 }
 
-.hamburguer .line{
+.hamburguer .line {
   @apply block h-0.5 w-6 bg-black duration-300;
 }
 
@@ -77,38 +77,38 @@ body {
 }
 
 .home-content {
-  @apply grid lg:grid-cols-2 w-full gap-3 px-4 py-7 sm:px-8 lg:py-8 ;
+  @apply grid lg:grid-cols-2 w-full gap-3 px-4 py-7 sm:px-8 lg:py-8;
 }
 
-.home-header{
+.home-header {
   @apply flex flex-col justify-between gap-8;
 }
 
-.card{
+.card {
   @apply bg-cards shadow-md flex flex-col px-5 py-4 w-full h-36 gap-2;
 }
 
-.card-icon{
+.card-icon {
   @apply text-2xl py-2 w-12 h-12 text-center shadow-md border border-zinc-200 rounded-full dark:bg-white;
 }
 
-.card-body{
+.card-body {
   @apply flex flex-row;
 }
 
-.card-amount{
+.card-amount {
   @apply font-bold text-2xl dark:text-white;
 }
 
-.cards-wrapper{
+.cards-wrapper {
   @apply container flex flex-col lg:flex-row gap-3 justify-between;
 }
 
-.budget-doughnut-wrapper{
+.budget-doughnut-wrapper {
   @apply flex flex-col xl:flex-row gap-3 justify-between;
 }
 
-.doughnut-box{
+.doughnut-box {
   @apply bg-cards py-4 px-4 basis-1/2;
 }
 
@@ -116,14 +116,22 @@ body {
   @apply bg-cards py-4 px-4 basis-1/2;
 }
 
-.budget-amounts-box{
+.budget-amounts-box {
   @apply bg-zinc-100 rounded-md px-3 py-4 my-2 dark:bg-zinc-800;
 }
 
-.dashboard-tables{
+.dashboard-tables {
   @apply flex flex-col lg:flex-row gap-3 mt-4;
 }
 
+.table {
+  @apply w-full text-sm text-left rtl:text-right text-zinc-500 dark:text-zinc-300 dark:bg-zinc-700;
+}
 
+.table-header {
+  @apply text-xs text-gray-700 uppercase bg-gray-50 dark:text-zinc-100 dark:bg-zinc-800;
+}
 
-
+.table-item {
+  @apply bg-white border-b dark:border-b-zinc-700 dark:bg-zinc-800;
+}
