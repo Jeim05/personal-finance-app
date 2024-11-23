@@ -17,7 +17,7 @@ export const CategoriesTable = () => {
               <td className='px-2 py-3'>₡ 15000</td>
             </tr>
             <tr className='table-item'>
-              <td className='px-2 py-3'>Alimentación</td>
+              <td className='px-2 py-3'>Mascotas</td>
               <td className='px-2 py-3'>₡ 15000</td>
             </tr>
             <tr className='table-item '>
@@ -25,11 +25,11 @@ export const CategoriesTable = () => {
               <td className='px-2 py-3'>₡ 15000</td>
             </tr>
             <tr className='table-item '>
-              <td className='px-2 py-3'>Alimentación</td>
+              <td className='px-2 py-3'>Disfrutar</td>
               <td className='px-2 py-3'>₡ 15000</td>
             </tr>
             <tr className='table-item'>
-              <td className='px-2 py-3'>Alimentación</td>
+              <td className='px-2 py-3'>Otros</td>
               <td className='px-2 py-3'>₡ 15000</td>
             </tr>
           </tbody>

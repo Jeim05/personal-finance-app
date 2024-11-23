@@ -23,7 +23,7 @@ export const BudgedTable = () => {
               </td>
             </tr>
             <tr className='table-item'>
-              <td className='px-2 py-3'>Alimentación</td>
+              <td className='px-2 py-3'>Disfrutar</td>
               <td className='px-2 py-3 text-center'>
                 <input type="checkbox" />
               </td>
