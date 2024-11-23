@@ -3,6 +3,7 @@ import { PresupuestoCategorias } from '@/components/dashboard/PresupuestoCategor
 import { DashboardTables } from '@/components/dashboard/DashboardTables'
 import { VerticalBarChart } from '@/components/ui/VerticalBarChart'
 import { LineChartUtility } from '@/components/ui/LineChartUtility'
+import { SavingDebts } from '@/components/dashboard/SavingDebts'
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
         <div className='home-content-left'>
           <PresupuestoCategorias />
           <LineChartUtility />
+          <SavingDebts />
         </div>
       </div>
     </section>
