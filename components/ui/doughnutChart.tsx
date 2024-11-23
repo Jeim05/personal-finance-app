@@ -1,8 +1,9 @@
 "use client"
-import { Chart as ChartJS, ArcElement, Tooltip, Legend, plugins, ChartOptions } from "chart.js";
+import { Chart as ChartJS, ArcElement, Tooltip, Legend, plugins, ChartOptions, Colors } from "chart.js";
+import { useEffect, useState } from "react";
 import { Doughnut } from "react-chartjs-2";
 
-ChartJS.register(ArcElement, Tooltip, Legend, plugins);
+ChartJS.register(ArcElement, Tooltip, Legend, plugins, Colors);
 
 const categorias = [
   { 'nombre': 'Disfrutar', 'valor': 20 },
@@ -17,6 +18,26 @@ const categorias = [
 const DoughnutChart = (/*{accounts}:DoughnutChartProps*/) => {
   const labels = categorias.map(mes => mes.nombre);
   const values = categorias.map(mes => mes.valor);
+  const [theme, setTheme] = useState("light");
+
+  useEffect(() => {
+    // Detectar el tema en el montaje
+    const isDark = document.documentElement.classList.contains("dark");
+    setTheme(isDark ? "dark" : "light");
+
+    // Observer para cambios dinámicos en el tema
+    const observer = new MutationObserver(() => {
+      const isDarkNow = document.documentElement.classList.contains("dark");
+      setTheme(isDarkNow ? "dark" : "light");
+    });
+
+    observer.observe(document.documentElement, { attributes: true, attributeFilter: ["class"] });
+
+    return () => observer.disconnect();
+  }, []);
+
+  const lightLabelColor = "rgba(0, 0, 0, 0.7)"; // Color oscuro en modo claro
+  const darkLabelColor = "rgba(255, 255, 255, 0.7)";
 
   const data = {
     datasets: [{
@@ -45,8 +66,9 @@ const DoughnutChart = (/*{accounts}:DoughnutChartProps*/) => {
           usePointStyle: true,
           pointStyle: "circle",
           font: {
-            size: 10
-          }
+            size: 10,
+          },
+          color: theme === "dark" ? darkLabelColor : lightLabelColor,
         }
       },
     },
