@@ -1,29 +1,29 @@
-"use client"
+'use client'
 import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { useEffect, useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export const DarkModeSwitcher = () => {
     const [darkMode, setDarkMode] = useState(false);
 
     useEffect(() => {
-        const theme = localStorage.getItem("theme");
-        if (theme === "dark") {
-            document.documentElement.classList.add("dark");
+        const theme = localStorage.getItem('theme');
+        if (theme === 'dark') {
+            document.documentElement.classList.add('dark');
             setDarkMode(true);
         } else {
-            document.documentElement.classList.remove("dark");
+            document.documentElement.classList.remove('dark');
         }
     }, []);
 
     const toggleDarkMode = () => {
         if (darkMode) {
-            document.documentElement.classList.remove("dark");
-            localStorage.setItem("theme", "light");
+            document.documentElement.classList.remove('dark');
+            localStorage.setItem('theme', 'light');
             setDarkMode(false);
         } else {
-            document.documentElement.classList.add("dark");
-            localStorage.setItem("theme", "dark");
+            document.documentElement.classList.add('dark');
+            localStorage.setItem('theme', 'dark');
             setDarkMode(true);
         }
     };
@@ -31,9 +31,7 @@ export const DarkModeSwitcher = () => {
     return (
         <li>
             <label
-                className={`relative flex items-center cursor-pointer h-8 w-16 
-                    ${darkMode ? 'dark:bg-gradient-to-r from-blue-500 to-purple-500' : 'bg-gray-300'} 
-                    rounded-full shadow-inner transition-all`}
+                className={`relative flex items-center cursor-pointer h-8 w-16 bg-gray-300 dark:bg-gradient-to-r from-blue-500 to-purple-500 rounded-full shadow-inner transition-all`}
             >
                 <input
                     type="checkbox"
@@ -41,19 +39,15 @@ export const DarkModeSwitcher = () => {
                     checked={darkMode}
                     onChange={toggleDarkMode}
                 />
-                <span className="absolute flex items-center justify-between w-full px-1">
-                    <span
-                        className={`flex items-center justify-center h-6 w-6 bg-white rounded-full shadow-md 
-                            ${darkMode ? 'hidden' : ''}`}
-                    >
+                <span
+                    className={`absolute flex items-center justify-center h-6 w-6 bg-white rounded-full shadow-md transform transition-transform duration-300 ${darkMode ? 'translate-x-9' : 'translate-x-1'
+                        }`}>
+                    {!darkMode && (
                         <FontAwesomeIcon icon={faSun} className="text-gray-400" />
-                    </span>
-                    <span
-                        className={`flex items-center justify-center h-6 w-6 bg-white rounded-full shadow-md 
-                            ${darkMode ? '' : 'hidden'}`}
-                    >
+                    )}
+                    {darkMode && (
                         <FontAwesomeIcon icon={faMoon} className="text-blue-500" />
-                    </span>
+                    )}
                 </span>
             </label>
         </li>
