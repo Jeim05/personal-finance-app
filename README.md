@@ -12,5 +12,7 @@ The objective of this project is to provide a simple way to manage your personal
 - Dark Mode
 - DataTables
 
+
+The following image is a visualization of how the page is structured.
 ![alt text](image.png)
 
