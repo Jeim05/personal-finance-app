@@ -7,6 +7,7 @@ export interface CardProps {
     icon_variant?: string;
     arrow: IconDefinition;
     arrow_variant?: string;
+    percent?:string;
 }
 
 export interface SubtitlesProps {
