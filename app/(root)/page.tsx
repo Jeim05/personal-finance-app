@@ -7,7 +7,7 @@ import { SavingDebts } from '@/components/dashboard/SavingDebts'
 
 const Home = () => {
   return (
-    <section className='home'>
+    <section className='main-section'>
       <div className='home-content'>
         <div className='home-content-right'>
           <MainCards />

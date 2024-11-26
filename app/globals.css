@@ -124,6 +124,8 @@ body {
   @apply flex flex-col lg:flex-row gap-3 mt-4;
 }
 
+/*ESTILOS DE TABLAS DE DATATABLE/*
+
 .table {
   @apply w-full text-sm text-left rtl:text-right text-zinc-500 dark:text-zinc-300 dark:bg-zinc-700;
 }
@@ -135,3 +137,18 @@ body {
 .table-item {
   @apply bg-white border-b dark:border-b-zinc-700 dark:bg-zinc-800;
 }
+
+/* Sobreescribe estilos específicos de DataTables */
+table.dataTable thead th {
+  background-color: #f3f4f6; /* Fondo gris claro */
+  color: #374151; /* Texto oscuro */
+}
+
+table.dataTable tbody tr:nth-child(odd) {
+  background-color: #f9fafb; /* Fondo claro alternado */
+}
+
+table.dataTable tbody tr:nth-child(even) {
+  background-color: #ffffff; /* Fondo blanco */
+}
+
