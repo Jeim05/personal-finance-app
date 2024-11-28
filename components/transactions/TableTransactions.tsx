@@ -10,25 +10,18 @@ DataTable.use(DT);
 
 const TableTransactions = () => {
   const data = [
-    ["1", "John Doe", "johndoe@example.com", "Admin"],
-    ["2", "Jane Smith", "janesmith@example.com", "User"],
-    ["3", "Bob Brown", "bobbrown@example.com", "Editor"],
-    ["4", "John Doe", "johndoe@example.com", "Admin"],
-    ["5", "Jane Smith", "janesmith@example.com", "User"],
-    ["6", "Bob Brown", "bobbrown@example.com", "Editor"],
-    ["7", "John Doe", "johndoe@example.com", "Admin"],
-    ["8", "Jane Smith", "janesmith@example.com", "User"],
-    ["9", "Bob Brown", "bobbrown@example.com", "Editor"],
-    ["10", "John Doe", "johndoe@example.com", "Admin"],
-    ["11", "Jane Smith", "janesmith@example.com", "User"],
-    ["12", "Bob Brown", "bobbrown@example.com", "Editor"],
+    ["1", "27/11/2024", "Alimentos", "Compras super", "Tarjeta", "Egreso", 15000]
+
   ];
 
   const columns = [
     { title: "ID" },
-    { title: "Nombre" },
-    { title: "Correo Electrónico" },
-    { title: "Rol" },
+    { title: "Fecha" },
+    { title: "Categoria" },
+    { title: "Descripcion" },
+    { title: "Método pago" },
+    { title: "Tipo Transacción" },
+    { title: "Monto" }
   ];
 
   return (
@@ -40,7 +33,7 @@ const TableTransactions = () => {
           paging: true,
           searching: true,
           ordering: true,
-          responsive: true, // Activa el diseño responsivo
+          responsive: true, 
         }}
         className="table-auto w-full text-sm text-left border-collapse border border-gray-300 dark:border-gray-700"
       />
