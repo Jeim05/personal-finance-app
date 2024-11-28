@@ -3,9 +3,8 @@ import DataTable from "datatables.net-react";
 import DT from "datatables.net-dt";
 import 'datatables.net-select-dt';
 import 'datatables.net-responsive-dt';
-import 'datatables.net-dt/css/dataTables.dataTables.css'; // Estilo predeterminado de DataTables
+import 'datatables.net-dt/css/dataTables.dataTables.css';
 
-// Registrar las extensiones
 DataTable.use(DT);
 
 const TableTransactions = () => {
