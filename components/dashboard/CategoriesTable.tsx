@@ -1,6 +1,28 @@
-import React from 'react'
+'use client'
+
+import { Categoria } from "@/Interfaces/Categoria"
+import { appsettings } from "@/settings/appsettings";
+import { useEffect, useState } from "react"
 
 export const CategoriesTable = () => {
+  const [categories, setCategories] = useState<Categoria[]>([]);
+
+  const getCategories = async () => {
+    const response = await fetch(`${appsettings.apiUrl}categorias`);
+
+    if (response.ok) {
+      const data = await response.json();
+      console.log(data.body);
+      
+      setCategories(data.body);
+    }
+  }
+
+  useEffect(()=>{
+    getCategories()
+  },[])
+
+
   return (
     <div className='bg-cards basis-1/2 '>
       <div className='px-4 py-4 relative overflow-x-auto'>
@@ -12,26 +34,14 @@ export const CategoriesTable = () => {
             </tr>
           </thead>
           <tbody>
-            <tr className='table-item '>
-              <td className='px-2 py-3'>Servicios y suscripciones</td>
-              <td className='px-2 py-3'>₡ 15000</td>
-            </tr>
-            <tr className='table-item'>
-              <td className='px-2 py-3'>Mascotas</td>
-              <td className='px-2 py-3'>₡ 15000</td>
-            </tr>
-            <tr className='table-item '>
-              <td className='px-2 py-3'>Alimentación</td>
-              <td className='px-2 py-3'>₡ 15000</td>
-            </tr>
-            <tr className='table-item '>
-              <td className='px-2 py-3'>Disfrutar</td>
-              <td className='px-2 py-3'>₡ 15000</td>
-            </tr>
-            <tr className='table-item'>
-              <td className='px-2 py-3'>Otros</td>
-              <td className='px-2 py-3'>₡ 15000</td>
-            </tr>
+            {
+              categories.map((item) => (
+                <tr key={item.IdCategoria} className='table-item '>
+                  <td className='px-2 py-3'>{item.Nombre}</td>
+                  <td className='px-2 py-3'>₡ 15000</td>
+                </tr>
+              ))
+            }
           </tbody>
         </table>
       </div>

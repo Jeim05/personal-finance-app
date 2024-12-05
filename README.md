@@ -10,7 +10,7 @@ The objective of this project is to provide a simple way to manage your personal
 - Consuming API.
 - Responsive desing
 - Dark Mode
-- DataTables
+- Consuming an API
 
 
 The following image is a visualization of how the page is structured.
