@@ -34,7 +34,7 @@ const TableTransactions = () => {
           ordering: true,
           responsive: true, 
         }}
-        className="table-auto w-full text-sm text-left border-collapse border border-gray-300 dark:border-gray-700"
+        className="table-auto w-full text-sm text-gray-500 border border-gray-200 dark:text-gray-400 dark:border-gray-700"
       />
     </div>
   );
