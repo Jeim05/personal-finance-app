@@ -1,4 +1,3 @@
-
 import TableTransactions from '@/components/transactions/TableTransactions'
 
 const page = () => {
