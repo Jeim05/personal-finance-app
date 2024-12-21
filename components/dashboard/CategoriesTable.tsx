@@ -8,18 +8,18 @@ export const CategoriesTable = () => {
   const [categories, setCategories] = useState<Categoria[]>([]);
 
   const getCategories = async () => {
-    const response = await fetch(`${appsettings.apiUrl}categorias`);
+    const response = await fetch(`${appsettings.apiUrl}Categoria`);
 
     if (response.ok) {
-      const data = await response.json();
-      console.log(data.body);
-      
-      setCategories(data.body);
+      const data = await response.json();      
+      setCategories(data.value);
+      console.log(data.value);
     }
   }
 
   useEffect(()=>{
     getCategories()
+    console.log(categories)
   },[])
 
 
@@ -36,8 +36,8 @@ export const CategoriesTable = () => {
           <tbody>
             {
               categories.map((item) => (
-                <tr key={item.IdCategoria} className='table-item '>
-                  <td className='px-2 py-3'>{item.Nombre}</td>
+                <tr key={item.idCategoria} className='table-item '>
+                  <td className='px-2 py-3'>{item.nombre}</td>
                   <td className='px-2 py-3'>₡ 15000</td>
                 </tr>
               ))
