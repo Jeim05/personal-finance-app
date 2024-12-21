@@ -1,9 +1,10 @@
 "use client";
+import { appsettings } from "@/settings/appsettings";
 import { DataTables } from "../ui/DataTables";
 
 const TableTransactions = () => {
-
   
+
   const columns = ["ID", "Nombre", "Correo"];
   const data = [
     { ID: 1, Nombre: "Jeimmy Lopez", Correo: "jeimmy@example.com" },

@@ -4,7 +4,6 @@ import "datatables.net-dt/css/dataTables.dataTables.css";
 import "datatables.net-dt";
 import $ from "jquery";
 
-
 export const DataTables = ({ data, columns }: DataTableProps) => {
     useEffect(() => {
         const table = $('#idTable').DataTable();
@@ -17,7 +16,7 @@ export const DataTables = ({ data, columns }: DataTableProps) => {
     return (
         <div className="overflow-x-auto">
             <table id="idTable" className="table-auto w-full text-left border-collapse">
-                <thead className="bg-gray-500">
+                <thead className="bg-gray-200">
                     <tr>
                         {columns.map((col, index) => (
                             <th key={index} className="px-4 py-2 border border-gray-300">

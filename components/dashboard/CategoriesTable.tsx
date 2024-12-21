@@ -1,5 +1,4 @@
 'use client'
-
 import { Categoria } from "@/Interfaces/Categoria"
 import { appsettings } from "@/settings/appsettings";
 import { useEffect, useState } from "react"
