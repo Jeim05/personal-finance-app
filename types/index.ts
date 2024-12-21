@@ -14,8 +14,3 @@ export interface SubtitlesProps {
     text: string;
     variants?: string;
 }
-
-export interface DataTableProps {
-    data: Array<{[key:string]:string|number}>;
-    columns: string[]
-}
