@@ -1,9 +1,26 @@
 "use client";
 import { appsettings } from "@/settings/appsettings";
 import { DataTables } from "../ui/DataTables";
+import { useEffect, useState } from "react";
+import { Categoria } from "@/Interfaces/Categoria";
 
 const TableTransactions = () => {
+  const [categories, setCategories] = useState<Categoria[]>([]);
+
+   const getCategories = async () => {
+      const response = await fetch(`${appsettings.apiUrl}Categoria`);
   
+      if (response.ok) {
+        const data = await response.json();      
+        setCategories(data.value);
+      }
+    }
+  
+    useEffect(()=>{
+      getCategories()
+      console.log(categories)
+    },[])
+
 
   const columns = ["ID", "Nombre", "Correo"];
   const data = [
