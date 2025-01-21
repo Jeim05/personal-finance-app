@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "./card";
-import { faHandHoldingDollar, faMoneyBillTransfer, faArrowUp, faArrowDown} from "@fortawesome/free-solid-svg-icons";
+import { faHandHoldingDollar, faMoneyBillTransfer, } from "@fortawesome/free-solid-svg-icons";
 
 export default function MainCards() {
   return (
@@ -10,16 +10,24 @@ export default function MainCards() {
         amount={500000.0}
         icon={faHandHoldingDollar}
         icon_variant="text-[#7EB5B1]"
-        arrow={faArrowUp}
-        arrow_variant="text-green-500"
       />
       <Card
         title="Egreso Mensual"
         icon={faMoneyBillTransfer}
         amount={60000}
         icon_variant="text-[#B25C60]"
-        arrow={faArrowDown}
-        arrow_variant="text-red-500"
+      />
+      <Card
+        title="Egreso Mensual"
+        icon={faMoneyBillTransfer}
+        amount={60000}
+        icon_variant="text-[#B25C60]"
+      />
+      <Card
+        title="Egreso Mensual"
+        icon={faMoneyBillTransfer}
+        amount={60000}
+        icon_variant="text-[#B25C60]"
       />
     </div>
   );
