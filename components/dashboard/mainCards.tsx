@@ -17,18 +17,6 @@ export default function MainCards() {
         amount={60000}
         icon_variant="text-[#B25C60]"
       />
-      <Card
-        title="Egreso Mensual"
-        icon={faMoneyBillTransfer}
-        amount={60000}
-        icon_variant="text-[#B25C60]"
-      />
-      <Card
-        title="Egreso Mensual"
-        icon={faMoneyBillTransfer}
-        amount={60000}
-        icon_variant="text-[#B25C60]"
-      />
     </div>
   );
 }
