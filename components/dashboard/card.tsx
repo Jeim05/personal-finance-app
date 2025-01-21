@@ -1,6 +1,6 @@
 import { CardProps } from '@/types'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { Subtitles } from './Subtitles'
+import { Subtitles } from '../Subtitles'
 
 export default function Card({ title, amount, icon, icon_variant, arrow, arrow_variant, percent }: CardProps) {
   return (

@@ -1,5 +1,5 @@
 "use client"
-import { Subtitles } from '../dashboard/Subtitles'
+import { Subtitles } from '../Subtitles'
 import { Bar } from 'react-chartjs-2'
 import { Chart as ChartJS, ArcElement, Tooltip, Legend, plugins, CategoryScale, LinearScale, BarElement } from "chart.js";
 

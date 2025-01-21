@@ -1,7 +1,7 @@
 "use client"
 import { Line } from 'react-chartjs-2'
 import { Chart as ChartJS, ArcElement, Tooltip, Legend, plugins, PointElement, LineElement  } from "chart.js";
-import { Subtitles } from '../dashboard/Subtitles';
+import { Subtitles } from '../Subtitles';
 
 ChartJS.register(ArcElement, Tooltip, Legend, plugins, PointElement, LineElement);
 

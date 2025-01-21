@@ -4,12 +4,14 @@ import { DashboardTables } from '@/components/dashboard/DashboardTables'
 import { VerticalBarChart } from '@/components/ui/VerticalBarChart'
 import { LineChartUtility } from '@/components/ui/LineChartUtility'
 import { SavingDebts } from '@/components/dashboard/SavingDebts'
+import Title from '@/components/title'
 
 const Home = () => {
   return (
     <section className='main-section'>
       <div className='home-content'>
-        <div className='home-content-right'>
+        <Title text='Dashboard'/>
+        {/* <div className='home-content-right'>
           <MainCards />
           <VerticalBarChart />
           <DashboardTables />
@@ -18,7 +20,7 @@ const Home = () => {
           <PresupuestoCategorias />
           <LineChartUtility />
           <SavingDebts />
-        </div>
+        </div> */}
       </div>
     </section>
   )

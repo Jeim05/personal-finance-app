@@ -1,5 +1,5 @@
 import React from 'react'
-import { Subtitles } from './Subtitles'
+import { Subtitles } from '../Subtitles'
 
 export const CardPresupuesto = () => {
     return (

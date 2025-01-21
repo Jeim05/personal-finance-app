@@ -1,6 +1,6 @@
 import React from 'react'
 import { CardPresupuesto } from './CardPresupuesto'
-import { Subtitles } from './Subtitles'
+import { Subtitles } from '../Subtitles'
 import DoughnutChart from '../ui/doughnutChart'
 
 export const PresupuestoCategorias = () => {

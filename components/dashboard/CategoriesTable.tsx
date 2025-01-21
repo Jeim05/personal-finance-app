@@ -4,7 +4,7 @@ import { appsettings } from "@/settings/appsettings";
 import { useEffect, useState } from "react"
 
 export const CategoriesTable = () => {
-  const [categories, setCategories] = useState<Categoria[]>([]);
+  /* const [categories, setCategories] = useState<Categoria[]>([]);
 
   const getCategories = async () => {
     const response = await fetch(`${appsettings.apiUrl}Categoria`);
@@ -19,8 +19,7 @@ export const CategoriesTable = () => {
   useEffect(() => {
     getCategories()
     console.log(categories)
-  }, [])
-
+  }, []) */
 
   return (
     <div className='bg-cards basis-1/2 '>
