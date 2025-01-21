@@ -10,16 +10,16 @@ export const CategoriesTable = () => {
     const response = await fetch(`${appsettings.apiUrl}Categoria`);
 
     if (response.ok) {
-      const data = await response.json();      
+      const data = await response.json();
       setCategories(data.value);
       console.log(data.value);
     }
   }
 
-  useEffect(()=>{
+  useEffect(() => {
     getCategories()
     console.log(categories)
-  },[])
+  }, [])
 
 
   return (
@@ -33,14 +33,18 @@ export const CategoriesTable = () => {
             </tr>
           </thead>
           <tbody>
-            {
+            <tr className='table-item '>
+              <td className='px-2 py-3'>Prueba</td>
+              <td className='px-2 py-3'>₡ 15000</td>
+            </tr>
+            {/* {
               categories.map((item) => (
                 <tr key={item.idCategoria} className='table-item '>
                   <td className='px-2 py-3'>{item.nombre}</td>
                   <td className='px-2 py-3'>₡ 15000</td>
                 </tr>
               ))
-            }
+            } */}
           </tbody>
         </table>
       </div>
