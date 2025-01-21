@@ -4,15 +4,16 @@ import { DashboardTables } from '@/components/dashboard/DashboardTables'
 import { VerticalBarChart } from '@/components/ui/VerticalBarChart'
 import { LineChartUtility } from '@/components/ui/LineChartUtility'
 import { SavingDebts } from '@/components/dashboard/SavingDebts'
-import Title from '@/components/title'
+import Title from '@/components/Title'
 
 const Home = () => {
   return (
     <section className='main-section'>
-      <div className='home-content'>
         <Title text='Dashboard'/>
+      <div className='home-content'>
+        <MainCards />
         {/* <div className='home-content-right'>
-          <MainCards />
+          
           <VerticalBarChart />
           <DashboardTables />
         </div>
