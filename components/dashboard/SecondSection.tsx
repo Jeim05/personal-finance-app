@@ -9,7 +9,9 @@ export default function SecondSection() {
         <div className="col-span-2 bg-white rounded-md">
           <LineChartUtility />
         </div>
+        <div className='py-6 '>
         <SumaDeudaAhorro />
+        </div>
         
       </div>
     );
