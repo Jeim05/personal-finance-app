@@ -6,10 +6,10 @@ import { DarkModeSwitcher } from './ui/DarkModeSwitcher'
 
 export const Header = () => {
     return (
-        <header className='h-16 px-10 py-2'>
+        <header className='h-16 lg:px-10 py-2'>
             <div className='flex flex-row-reverse items-center content-center h-full my-auto gap-4 px-4'>
                 <div className='flex gap-2 items-center'>
-                    <div>
+                    <div className='hidden sm:block'>
                         <p className='font-semibold dark:text-white'>Mi perfil</p>
                     </div>
                     <div className='rounded-full '>
@@ -18,7 +18,7 @@ export const Header = () => {
                 </div>
                 <ul className='flex gap-2'>
                     <DarkModeSwitcher />
-                    <li className='text-2xl text-[#4A617D] dark:text-[#75D6E4]'>
+                    <li className='text-2xl text-[#4A617D] dark:text-[#4271F7]'>
                         <FontAwesomeIcon icon={faBell} />
                     </li>
                 </ul>
