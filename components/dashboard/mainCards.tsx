@@ -1,21 +1,33 @@
 import React from "react";
 import Card from "./card";
-import { faHandHoldingDollar, faMoneyBillTransfer, } from "@fortawesome/free-solid-svg-icons";
+import { faHandHoldingDollar, faMoneyBills, faMoneyBillTransfer, faWallet, } from "@fortawesome/free-solid-svg-icons";
 
 export default function MainCards() {
   return (
     <div className="cards-wrapper">
       <Card
         title="Ingreso mensual"
-        amount={500000.0}
+        amount={373000}
+        variant="bg-[#75D6E4]"
         icon={faHandHoldingDollar}
-        icon_variant="text-[#7EB5B1]"
       />
       <Card
-        title="Egreso Mensual"
+        title="Presupuesto"
+        amount={500000.0}
+        variant="bg-[#EDB043]"
+        icon={faMoneyBills}
+      />
+      <Card
+        title="Egreso mensual"
+        amount={500000.0}
+        variant="bg-[#A168D3]"
         icon={faMoneyBillTransfer}
-        amount={60000}
-        icon_variant="text-[#B25C60]"
+      />
+      <Card
+        title="Monto Disponible"
+        amount={500000.0}
+        variant="bg-[#FD8B63]"
+        icon={faWallet}
       />
     </div>
   );
