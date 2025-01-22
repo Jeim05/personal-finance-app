@@ -4,7 +4,7 @@ import React from 'react'
 export default function Title({text, variants}: SubtitlesProps) {
     return (
         <div>
-            <h1 className={`font-bold text-3xl text-[#4A617D] dark:text-white ${variants}`}>{text}</h1>
+            <h1 className={`font-bold text-3xl pb-8 text-[#4A617D] dark:text-white ${variants}`}>{text}</h1>
         </div>
     )
 }
