@@ -82,7 +82,7 @@ body {
 }
 
 .card-icon {
-  @apply text-3xl py-3 w-16 h-16 text-center shadow-md bg-white rounded-full dark:bg-white;
+  @apply  py-3 text-center shadow-md rounded-full;
 }
 
 .card-body {

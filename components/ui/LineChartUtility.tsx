@@ -6,18 +6,18 @@ import { Subtitles } from '../Subtitles';
 ChartJS.register(ArcElement, Tooltip, Legend, plugins, PointElement, LineElement, CategoryScale, LinearScale);
 
 const datos = [
-    { 'mes': 'Enero', 'ingreso': 10000, 'egreso': 12000 },
-    { 'mes': 'Febrero', 'ingreso': 25000,'egreso': 12000},
-    { 'mes': 'Marzo', 'ingreso': 32000,'egreso': 12000 },
-    { 'mes': 'Abril', 'ingreso': 25500,'egreso': 12000},
-    { 'mes': 'Mayo', 'ingreso': 0, 'egreso': 0 },
-    { 'mes': 'Junio', 'ingreso': 55000,'egreso': 12000},
-    { 'mes': 'Julio', 'ingreso': 12000,'egreso': 12000 },
-    { 'mes': 'Agosto', 'ingreso': 27000,'egreso': 12000},
-    { 'mes': 'Setiembre', 'ingreso': 30000,'egreso': 12000 },
-    { 'mes': 'Octubre', 'ingreso': 25500,'egreso': 12000},
-    { 'mes': 'Noviembre', 'ingreso': 65000,'egreso': 12000 },
-    { 'mes': 'Diciembre', 'ingreso': 74100,'egreso': 12000},
+    { 'mes': 'Enero', 'ingreso': 373000, 'egreso': 372000 },
+    { 'mes': 'Febrero', 'ingreso': 373000,'egreso': 295000},
+    { 'mes': 'Marzo', 'ingreso': 373000,'egreso': 305200 },
+    { 'mes': 'Abril', 'ingreso': 373000,'egreso': 371200},
+    { 'mes': 'Mayo', 'ingreso': 373000, 'egreso': 299555 },
+    { 'mes': 'Junio', 'ingreso': 375000,'egreso': 373000},
+    { 'mes': 'Julio', 'ingreso': 373000,'egreso': 295000 },
+    { 'mes': 'Agosto', 'ingreso': 373000,'egreso': 250000},
+    { 'mes': 'Setiembre', 'ingreso': 373000,'egreso': 245500 },
+    { 'mes': 'Octubre', 'ingreso': 373000,'egreso': 267480},
+    { 'mes': 'Noviembre', 'ingreso': 373000,'egreso': 291700 },
+    { 'mes': 'Diciembre', 'ingreso': 373000,'egreso': 315200},
 ]
 
 export const LineChartUtility = () => {
@@ -45,10 +45,10 @@ export const LineChartUtility = () => {
       };
 
   return (
-    <div className='bg-cards mt-4 p-4'>
+    <div className='mt-4 p-2'>
         <Subtitles text='Ingreso y gasto Mensual' />
         <div>
-            <Line data={data} />
+            <Line data={data} height={100} />
         </div>
     </div>
   )

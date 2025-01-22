@@ -6,6 +6,12 @@ export interface CardProps {
     variant?: string;
     icon: IconDefinition;
     icon_variant?: string;
+    icon_position: "left" | "right"
+}
+
+export interface IconProps {
+    icon: IconDefinition;
+    variant?: string;
 }
 
 export interface SubtitlesProps {
