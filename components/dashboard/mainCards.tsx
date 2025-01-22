@@ -13,19 +13,19 @@ export default function MainCards() {
       />
       <Card
         title="Presupuesto"
-        amount={500000.0}
+        amount={292500}
         variant="bg-[#EDB043]"
         icon={faMoneyBills}
       />
       <Card
         title="Egreso mensual"
-        amount={500000.0}
+        amount={225400}
         variant="bg-[#A168D3]"
         icon={faMoneyBillTransfer}
       />
       <Card
         title="Monto Disponible"
-        amount={500000.0}
+        amount={30000}
         variant="bg-[#FD8B63]"
         icon={faWallet}
       />

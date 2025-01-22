@@ -10,7 +10,7 @@ export default function Card({ title, amount, variant, icon, icon_variant }: Car
       </div>
       <div className='card-body'>
         <div className='flex-1 flex flex-col'>
-          <p className='card-amount py-3'>₡{amount}</p>  
+          <p className='card-amount py-1'>₡{amount}</p>  
           <Subtitles text={title} />
         </div>
       </div>
