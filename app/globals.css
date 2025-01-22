@@ -78,7 +78,7 @@ body {
 } */
 
 .card {
-  @apply shadow-md flex gap-4 items-center px-5 py-4 w-full h-36 rounded-lg;
+  @apply shadow-md flex gap-4  items-center px-5 py-4 w-full h-36 rounded-lg;
 }
 
 .card-icon {
