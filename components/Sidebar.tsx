@@ -33,7 +33,7 @@ const Sidebar = () => {
                             const isActive = pathname == item.route || pathname.startsWith(`${item.route}/`);
 
                             return (
-                                <Link key={item.label} href={item.route} className={`sidebar-link ${isActive ? 'bg-[#4271F7] text-white' : ''}`}>
+                                <Link key={item.label} href={item.route} className={`sidebar-link text-black ${isActive ? 'bg-[#4271F7] text-white' : ''}`}>
                                     <div className='relative size-6'>
                                         <Image src={item.icon} fill alt={item.label} className={`brightness-50 dark:invert ${isActive ? 'brightness-200 invert' : ''}`} />
                                     </div>
