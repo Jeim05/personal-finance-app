@@ -11,7 +11,7 @@ export default function MainCards() {
         variant="bg-[#75D6E4]"
         icon={faHandHoldingDollar}
         icon_position="left"
-        icon_variant="bg-white text-3xl w-16 h-16"
+        icon_variant="bg-white text-black text-3xl w-16 h-16"
       />
       <Card
         title="Presupuesto"
