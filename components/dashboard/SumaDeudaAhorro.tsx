@@ -11,7 +11,7 @@ export default function SumaDeudaAhorro() {
             icon={faFileInvoiceDollar}
             icon_position="right"
             icon_variant='text-5xl w-20 h-20 bg-[#F4C97C] text-[#C76D07]'
-            variant='border-2 border-[#EDB043] justify-between px-6 bg-white uppercase'
+            variant='border-2 border-[#EDB043] justify-between px-6 bg-white uppercase text-black'
           />
           <Card
             title="Total Ahorros"
