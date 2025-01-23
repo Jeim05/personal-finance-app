@@ -19,7 +19,7 @@ export default function MainCards() {
         variant="bg-[#EDB043]"
         icon={faMoneyBills}
         icon_position="left"
-        icon_variant="bg-white text-3xl w-16 h-16"
+        icon_variant="bg-white text-black text-3xl w-16 h-16"
       />
       <Card
         title="Egreso mensual"
@@ -27,7 +27,7 @@ export default function MainCards() {
         variant="bg-[#A168D3]"
         icon={faMoneyBillTransfer}
         icon_position="left"
-        icon_variant="bg-white text-3xl w-16 h-16" 
+        icon_variant="bg-white text-black text-3xl w-16 h-16" 
       />
       <Card
         title="Monto Disponible"
@@ -35,7 +35,7 @@ export default function MainCards() {
         variant="bg-[#FD8B63]"
         icon={faWallet}
         icon_position="left"
-        icon_variant="bg-white text-3xl w-16 h-16"
+        icon_variant="bg-white text-black text-3xl w-16 h-16"
       />
     </div>
   );

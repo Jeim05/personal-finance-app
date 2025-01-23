@@ -29,7 +29,7 @@ body {
 /* Universal */
 
 .subtitles {
-  @apply font-semibold text-base;
+  @apply text-black font-semibold text-base;
 }
 
 /* SIDEBAR */
