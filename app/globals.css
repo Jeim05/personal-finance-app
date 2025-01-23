@@ -90,7 +90,7 @@ body {
 }
 
 .card-amount {
-  @apply font-bold text-3xl;
+  @apply font-bold text-black text-3xl;
 }
 
 .cards-wrapper {

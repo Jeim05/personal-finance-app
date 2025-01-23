@@ -19,7 +19,7 @@ export default function SumaDeudaAhorro() {
             icon={faPiggyBank}
             icon_position="right"
             icon_variant='text-5xl w-20 h-20 bg-[#FFCBB9] text-[#FD8B63]'
-            variant='border-2 border-[#FD8B63] justify-between bg-white uppercase'
+            variant='border-2 border-[#FD8B63] justify-between bg-white uppercase text-black'
           />
         </div>
   )
