@@ -70,7 +70,7 @@ body {
 }
 
 .home-content {
-  @apply w-full gap-3 px-4 py-4 sm:px-8 lg:py-3;
+  @apply w-full gap-3 px-4 py-4 sm:px-12 lg:py-3;
 }
 
 /* .home-header {

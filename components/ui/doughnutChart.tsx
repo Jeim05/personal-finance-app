@@ -17,27 +17,7 @@ const categorias = [
 
 const DoughnutChart = (/*{accounts}:DoughnutChartProps*/) => {
   const labels = categorias.map(mes => mes.nombre);
-  const values = categorias.map(mes => mes.valor);
-  const [theme, setTheme] = useState("light");
-
-  useEffect(() => {
-    // Detectar el tema en el montaje
-    const isDark = document.documentElement.classList.contains("dark");
-    setTheme(isDark ? "dark" : "light");
-
-    // Observer para cambios dinámicos en el tema
-    const observer = new MutationObserver(() => {
-      const isDarkNow = document.documentElement.classList.contains("dark");
-      setTheme(isDarkNow ? "dark" : "light");
-    });
-
-    observer.observe(document.documentElement, { attributes: true, attributeFilter: ["class"] });
-
-    return () => observer.disconnect();
-  }, []);
-
-  const lightLabelColor = "rgba(0, 0, 0, 0.7)"; // Color oscuro en modo claro
-  const darkLabelColor = "rgba(255, 255, 255, 0.7)";
+  const values = categorias.map(mes => mes.valor)
 
   const data = {
     datasets: [{
@@ -61,14 +41,13 @@ const DoughnutChart = (/*{accounts}:DoughnutChartProps*/) => {
     responsive: true,
     plugins: {
       legend: {
-        position: 'right',
+        
         labels: {
           usePointStyle: true,
           pointStyle: "circle",
           font: {
             size: 10,
           },
-          color: theme === "dark" ? darkLabelColor : lightLabelColor,
         }
       },
     },
@@ -76,7 +55,7 @@ const DoughnutChart = (/*{accounts}:DoughnutChartProps*/) => {
   };
 
   return (
-    <div>
+    <div className="text-black dark:text-black py-4">
       <Doughnut data={data} options={options} />
     </div>
   )

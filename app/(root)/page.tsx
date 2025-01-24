@@ -1,3 +1,4 @@
+import CategoriesSection from '@/components/dashboard/CategoriesSection'
 import MainCards from '@/components/dashboard/mainCards'
 import SecondSection from '@/components/dashboard/SecondSection'
 import Title from '@/components/Title'
@@ -9,6 +10,7 @@ const Home = () => {
         <Title text='Dashboard'variants='py-2'/>
         <MainCards />
         <SecondSection />
+        <CategoriesSection />
       </div>
     </section>
   )

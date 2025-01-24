@@ -4,7 +4,7 @@ import { faFileInvoiceDollar, faPiggyBank } from '@fortawesome/free-solid-svg-ic
 
 export default function SumaDeudaAhorro() {
   return (
-    <div className="grid grid-flow-row gap-2">
+    <div className="grid grid-flow-row gap-6">
           <Card
             title="Deuda pendiente"
             amount={1240000}
