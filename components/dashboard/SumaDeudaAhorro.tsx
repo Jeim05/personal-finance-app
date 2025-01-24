@@ -10,16 +10,16 @@ export default function SumaDeudaAhorro() {
             amount={1240000}
             icon={faFileInvoiceDollar}
             icon_position="right"
-            icon_variant='text-5xl w-20 h-20 bg-[#F4C97C] text-[#C76D07]'
-            variant='border-2 border-[#EDB043] justify-between px-6 bg-white uppercase text-zinc-500'
+            icon_variant='text-4xl px-4 py-3 bg-[#F4C97C] text-[#C76D07]'
+            variant='border-2 border-[#EDB043] justify-between px-6 bg-white text-zinc-500'
           />
           <Card
             title="Suma de gasto Anual"
             amount={1240000}
             icon={faPiggyBank}
             icon_position="right"
-            icon_variant='text-5xl w-20 h-20 bg-[#FFCBB9] text-[#FD8B63]'
-            variant='border-2 border-[#FD8B63] justify-between bg-white uppercase text-zinc-500'
+            icon_variant='text-4xl px-3 py-3 bg-[#FFCBB9] text-[#FD8B63]'
+            variant='border-2 border-[#FD8B63] justify-between bg-white text-zinc-500'
           />
         </div>
   )

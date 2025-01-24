@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export const CardIcon = ({variant, icon }:IconProps) => {
     return (
-        <div className={`card-icon  ${variant}`}>
+        <div className={`card-icon ${variant}`}>
             <FontAwesomeIcon icon={icon} />
         </div>
     )
