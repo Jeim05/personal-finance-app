@@ -26,6 +26,54 @@ body {
   }
 }
 
+
+/* Background colors*/
+.bg-green{
+  @apply bg-[#7ABF49]
+}
+
+.bg-violet{
+  @apply bg-[#6249BF]
+}
+
+.bg-blue{
+  @apply bg-[#245AB4]
+}
+
+.bg-orange{
+  @apply bg-[#F27649]
+}
+
+.bg-cyan{
+  @apply bg-[#75D6E4]
+}
+
+.bg-gray{
+  @apply bg-[#F2F2F2]
+}
+
+/* Text colors*/
+
+.text-green{
+  @apply text-[#7ABF49]
+}
+
+.text-violet{
+  @apply text-[#6249BF]
+}
+
+.text-blue{
+  @apply text-[#245AB4]
+}
+
+.text-orange{
+  @apply text-[#F27649]
+}
+
+.text-cyan{
+  @apply text-[#75D6E4]
+}
+
 /* Universal */
 
 .subtitles {
@@ -90,7 +138,7 @@ body {
 }
 
 .card-amount {
-  @apply font-bold text-black text-3xl;
+  @apply font-bold text-black text-3xl py-1 dark:text-white;
 }
 
 .cards-wrapper {

@@ -8,34 +8,34 @@ export default function MainCards() {
       <Card
         title="Ingreso mensual"
         amount={373000}
-        variant="bg-[#75D6E4]"
+        variant="bg-white dark:bg-zinc-700"
         icon={faHandHoldingDollar}
         icon_position="left"
-        icon_variant="bg-white text-black text-3xl w-16 h-16"
+        icon_variant="bg-gray text-green text-3xl w-16 h-16"
       />
       <Card
         title="Presupuesto"
         amount={292500}
-        variant="bg-[#EDB043]"
+        variant="bg-white dark:bg-zinc-700"
         icon={faMoneyBills}
         icon_position="left"
-        icon_variant="bg-white text-black text-3xl w-16 h-16"
+        icon_variant="bg-gray text-cyan text-3xl w-16 h-16"
       />
       <Card
         title="Egreso mensual"
         amount={225400}
-        variant="bg-[#A168D3]"
+        variant="bg-white dark:bg-zinc-700"
         icon={faMoneyBillTransfer}
         icon_position="left"
-        icon_variant="bg-white text-black text-3xl w-16 h-16" 
+        icon_variant="bg-gray text-orange text-3xl w-16 h-16" 
       />
       <Card
         title="Monto Disponible"
         amount={30000}
-        variant="bg-[#FD8B63]"
+        variant="bg-white dark:bg-zinc-700"
         icon={faWallet}
         icon_position="left"
-        icon_variant="bg-white text-black text-3xl w-16 h-16"
+        icon_variant="bg-gray text-violet text-3xl w-16 h-16"
       />
     </div>
   );

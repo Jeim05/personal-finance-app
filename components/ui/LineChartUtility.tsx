@@ -48,7 +48,7 @@ export const LineChartUtility = () => {
     <div className='mt-4 p-2'>
         <Subtitles text='Ingreso y gasto Mensual' />
         <div>
-            <Line data={data}/>
+            <Line data={data} height={100}/>
         </div>
     </div>
   )
