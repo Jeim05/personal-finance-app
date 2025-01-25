@@ -33,6 +33,10 @@ body {
     @apply bg-gradient-to-r from-cyan-500 to-blue-500;
   }
 
+  .custom-bg-dark{
+    @apply bg-[#2B2E35];
+  }
+
 }
 
 /* Background colors*/
@@ -44,7 +48,7 @@ body {
   @apply bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 to-blue-500;
 }
 
-.bg-nuevo {
+.bg-dark{
   @apply bg-[#2B2E35];
 }
 
@@ -164,7 +168,7 @@ body {
 
 /*SAVINGS CARDS*/
 .card-savings {
-  @apply shadow-md flex flex-col bg-white items-center py-4 rounded-lg dark:bg-zinc-700;
+  @apply shadow-md flex flex-col bg-green items-center py-4 rounded-lg ;
 }
 
 .card-savings .container-total {
@@ -172,7 +176,7 @@ body {
 }
 
 .card-savings .total-amount {
-  @apply font-bold text-black text-4xl dark:text-white py-2
+  @apply font-bold text-black text-4xl py-2
 }
 
 .card-savings .container-anual {
@@ -180,7 +184,7 @@ body {
 }
 
 .card-savings .anual-amount {
-  @apply font-semibold text-2xl py-1 text-end text-black dark:text-white;
+  @apply font-semibold text-2xl py-1 text-end text-black;
 }
 
 
