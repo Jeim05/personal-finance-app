@@ -31,7 +31,7 @@ export const DarkModeSwitcher = () => {
     return (
         <li>
             <label
-                className={`relative flex items-center cursor-pointer h-8 w-16 bg-gray-300 dark:bg-[#4271F7] rounded-full shadow-inner transition-all`}
+                className={`relative flex items-center cursor-pointer h-8 w-16 bg-gray-300 dark:custom-gradient-dark rounded-full shadow-inner transition-all`}
             >
                 <input
                     type="checkbox"

@@ -18,7 +18,7 @@ export const Header = () => {
                 </div>
                 <ul className='flex gap-2'>
                     <DarkModeSwitcher />
-                    <li className='text-2xl text-[#4A617D] dark:text-[#4271F7]'>
+                    <li className='text-2xl text-blue-500 hover:scale-125 hover:text-cyan-500 '>
                         <FontAwesomeIcon icon={faBell} />
                     </li>
                 </ul>

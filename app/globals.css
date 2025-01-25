@@ -24,53 +24,73 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+
+  .hover-bg-gradient {
+    @apply bg-gradient-to-r from-cyan-500 to-blue-500;
+  }
+
+  .custom-gradient-dark{
+    @apply bg-gradient-to-r from-cyan-500 to-blue-500;
+  }
+
 }
 
-
 /* Background colors*/
-.bg-green{
+.bg-gradient {
+  @apply bg-gradient-to-r from-cyan-500 to-blue-500;
+}
+
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 to-blue-500;
+}
+
+.bg-nuevo {
+  @apply bg-[#2B2E35];
+}
+
+.bg-green {
   @apply bg-[#7ABF49]
 }
 
-.bg-violet{
+.bg-violet {
   @apply bg-[#6249BF]
 }
 
-.bg-blue{
+.bg-blue {
   @apply bg-[#245AB4]
 }
 
-.bg-orange{
+.bg-orange {
   @apply bg-[#F27649]
 }
 
-.bg-cyan{
+.bg-cyan {
   @apply bg-[#75D6E4]
 }
 
-.bg-gray{
+.bg-gray {
   @apply bg-[#F2F2F2]
 }
 
 /* Text colors*/
 
-.text-green{
+.text-green {
   @apply text-[#7ABF49]
 }
 
-.text-violet{
+.text-violet {
   @apply text-[#6249BF]
 }
 
-.text-blue{
+.text-blue {
   @apply text-[#245AB4]
 }
 
-.text-orange{
+.text-orange {
   @apply text-[#F27649]
 }
 
-.text-cyan{
+.text-cyan {
   @apply text-[#75D6E4]
 }
 
@@ -82,16 +102,17 @@ body {
 
 /* SIDEBAR */
 .sidebar {
-  @apply fixed left-0 top-0 h-screen border-r border-gray-200 dark:border-zinc-700 pt-8 px-4 bg-white dark:bg-zinc-700 
-  transition-transform duration-300 z-40 md:sticky md:translate-x-0 md:flex md:flex-col md:justify-between;
+  @apply fixed left-0 top-0 h-screen border-r border-gray-200 dark:border-zinc-700 pt-8 px-4 bg-white 
+  dark:bg-[#2B2E35] transition-transform duration-300 z-40 md:sticky md:translate-x-0 md:flex md:flex-col md:justify-between;
 }
 
 .sidebar-logo {
-  @apply transition-opacity duration-300 text-[#A168D3] font-bold text-2xl;
+  @apply transition-opacity duration-300 text-orange font-bold text-2xl;
 }
 
 .sidebar-link {
-  @apply flex items-center justify-start gap-3 py-2 px-2 w-full rounded-lg transition-all duration-300 md:p-3 2xl:p-4;
+  @apply flex items-center justify-start gap-3 py-2 px-2 w-full rounded-lg transition-all duration-300 my-2 md:p-3 
+  2xl:p-4 hover:hover-bg-gradient;
 }
 
 .sidebar-label {
@@ -99,13 +120,11 @@ body {
 }
 
 .toggle-button {
-  @apply cursor-pointer text-center text-black py-1 px-1.5 rounded-full bg-[#4177FD] 
-  shadow-lg border border-gray-200 absolute top-1 -right-7 hover:bg-[#C9C9D4] transition-transform duration-300 max-md:hidden;
+  @apply cursor-pointer text-center py-1 px-1.5 rounded-full bg-gradient shadow-lg border border-gray-200 absolute top-1 -right-7 hover:bg-zinc-700 dark:hover:bg-[#2B2E35] transition-transform duration-300 max-md:hidden;
 }
 
 .hamburguer {
-  @apply fixed top-4 left-4 z-50 flex flex-col justify-center items-center space-y-1 w-8 h-8 rounded-lg 
- bg-white shadow-lg md:hidden;
+  @apply fixed top-4 left-4 z-50 flex flex-col justify-center items-center space-y-1 w-8 h-8 rounded-lg bg-white shadow-lg md:hidden;
 }
 
 .hamburguer .line {
@@ -121,16 +140,14 @@ body {
   @apply w-full gap-3 px-4 py-4 sm:px-12 lg:py-3;
 }
 
-/* .home-header {
-  @apply flex flex-col justify-between gap-8;
-} */
+/* CARDS */
 
 .card {
   @apply shadow-md flex gap-4 items-center px-5 py-4 w-full h-36 rounded-lg;
 }
 
 .card-icon {
-  @apply  py-3 text-center shadow-md rounded-full;
+  @apply py-3 text-center shadow-md rounded-full;
 }
 
 .card-body {
@@ -145,24 +162,24 @@ body {
   @apply container flex flex-col lg:flex-row gap-3 justify-between;
 }
 
-.card-savings{
+/*SAVINGS CARDS*/
+.card-savings {
   @apply shadow-md flex flex-col bg-white items-center py-4 rounded-lg dark:bg-zinc-700;
 }
 
-.card-savings .container-total{
+.card-savings .container-total {
   @apply flex flex-col text-center py-4;
 }
 
-.card-savings .total-amount{
- @apply font-bold text-black text-4xl dark:text-white py-2
+.card-savings .total-amount {
+  @apply font-bold text-black text-4xl dark:text-white py-2
 }
 
-.card-savings .container-anual{
+.card-savings .container-anual {
   @apply border-t border-white grid grid-cols-2 gap-2 py-4 px-4 items-center
 }
 
-
-.card-savings .anual-amount{
+.card-savings .anual-amount {
   @apply font-semibold text-2xl py-1 text-end text-black dark:text-white;
 }
 
@@ -171,7 +188,7 @@ body {
   @apply flex flex-col xl:flex-row gap-3 justify-between;
 } */
 
-.doughnut-box {
+/* .doughnut-box {
   @apply py-4 px-4 basis-1/2;
 }
 
@@ -181,5 +198,4 @@ body {
 
 .dashboard-tables {
   @apply flex flex-col lg:flex-row gap-3 mt-4;
-}
-
+} */
