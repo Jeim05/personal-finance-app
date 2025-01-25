@@ -2,9 +2,9 @@ import React from 'react'
 import Card from './card'
 import { faFileInvoiceDollar, faPiggyBank } from '@fortawesome/free-solid-svg-icons'
 
-export default function SumaDeudaAhorro() {
+export default function DeudaGastoAnual() {
   return (
-    <div className="grid grid-flow-row gap-2">
+    <div className="grid grid-flow-row gap-4">
           <Card
             title="Deuda pendiente"
             amount={1240000}

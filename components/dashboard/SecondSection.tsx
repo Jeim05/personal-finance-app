@@ -1,6 +1,6 @@
 import React from 'react'
 import { LineChartUtility } from '../ui/LineChartUtility'
-import SumaDeudaAhorro from './SumaDeudaAhorro';
+import DeudaGastoAnual from './DeudaGastoAnual';
 import CardSavings from './CardSavings';
 
 
@@ -11,7 +11,7 @@ export default function SecondSection() {
       
       </div>
       <div className='basis-1/4'>
-        <SumaDeudaAhorro />
+        <DeudaGastoAnual />
       </div>
       <div className='basis-1/4'>
       <CardSavings />

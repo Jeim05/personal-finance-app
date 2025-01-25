@@ -145,9 +145,31 @@ body {
   @apply container flex flex-col lg:flex-row gap-3 justify-between;
 }
 
-.budget-doughnut-wrapper {
-  @apply flex flex-col xl:flex-row gap-3 justify-between;
+.card-savings{
+  @apply shadow-md flex flex-col bg-white items-center py-4 rounded-lg dark:bg-zinc-700;
 }
+
+.card-savings .container-total{
+  @apply flex flex-col text-center py-4;
+}
+
+.card-savings .total-amount{
+ @apply font-bold text-black text-4xl dark:text-white py-2
+}
+
+.card-savings .container-anual{
+  @apply border-t border-white grid grid-cols-2 gap-2 py-4 px-4 items-center
+}
+
+
+.card-savings .anual-amount{
+  @apply font-semibold text-2xl py-1 text-end text-black dark:text-white;
+}
+
+
+/* .budget-doughnut-wrapper {
+  @apply flex flex-col xl:flex-row gap-3 justify-between;
+} */
 
 .doughnut-box {
   @apply py-4 px-4 basis-1/2;
