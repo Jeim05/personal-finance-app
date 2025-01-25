@@ -6,7 +6,7 @@ import { Subtitles } from '../Subtitles'
 export default function CardSavings() {
     return (
         <div className='card-savings'>
-            <CardIcon icon={faPiggyBank} variant='rounded-full bg-white text-green p-3 text-5xl dark:custom-bg-dark' />
+            <CardIcon icon={faPiggyBank} variant='rounded-full bg-gray text-dark p-3 text-5xl' />
             <div>
                 <div className='container-total'>
                     <p className='total-amount '>₡500</p>

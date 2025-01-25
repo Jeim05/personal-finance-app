@@ -11,7 +11,7 @@ export default function DeudaGastoAnual() {
             icon={faFileInvoiceDollar}
             icon_position="right"
             icon_variant='text-4xl px-4 py-3 bg-[#F4C97C] text-[#C76D07]'
-            variant='border-2 border-[#EDB043] justify-between px-6 bg-white text-zinc-500'
+            variant='justify-between px-6 bg-orange text-zinc-500'
           />
           <Card
             title="Gasto Anual"
@@ -19,7 +19,7 @@ export default function DeudaGastoAnual() {
             icon={faPiggyBank}
             icon_position="right"
             icon_variant='text-4xl px-3 py-3 bg-[#FFCBB9] text-[#FD8B63]'
-            variant='border-2 border-[#FD8B63] justify-between bg-white text-zinc-500'
+            variant=' justify-between bg-cyan text-zinc-500'
           />
         </div>
   )
